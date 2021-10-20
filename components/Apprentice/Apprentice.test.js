@@ -18,15 +18,15 @@ describe("the Apprentice component", () => {
       { href: "https://www.github.com/", text: "Github" },
     ];
 
-    render(<Apprentice image="../../public/apprentices/image.png" name="First Last" links={ links } />);
+    render(<Apprentice image="/apprentices/image.png" name="First Last" links={ links } />);
 
-    image = screen.getByRole("image");
+    image = screen.getByRole("img");
     name = screen.getByRole("heading");
     renderedLinks = screen.getAllByRole("link");
   });
 
   it("renders image prop with appropriate src path", () => {
-    expect(image).toHaveAttribute("src", "../../public/apprentices/image.png");
+    expect(image).toHaveAttribute("src", "/apprentices/image.png");
   });
 
   it("renders name prop", () => {
