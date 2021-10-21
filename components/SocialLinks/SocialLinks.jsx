@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from '../link/link';
+import PropTypes from 'prop-types';
 
 const SocialLinks = ({ links = []}) => {
     return (
@@ -11,4 +12,11 @@ const SocialLinks = ({ links = []}) => {
     )
 };
 
-export default SocialLinks
+SocialLinks.propTypes = {
+  links: PropTypes.arrayOf(PropTypes.shape({
+    href: PropTypes.String,
+    text: PropTypes.String,
+  })),
+};
+
+export default SocialLinks;
