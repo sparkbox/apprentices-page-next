@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
+import styles from './link.module.scss';
 
 const Link = ({href, children}) => (
-  <a href={href}>{children}</a>
+  <a className={styles.link} href={href}>{children}</a>
 )
 
 Link.propTypes = {

@@ -3,13 +3,16 @@
 
 import React from 'react'
 import SocialLinks from '../SocialLinks/SocialLinks';
+import styles from './Apprentice.module.scss';
 
 const Apprentice = ({ image, name, links=[] }) => {
     return (
-      <article>
-        <h2>{ name }</h2>
-        <img src={ image } alt={ name } />
-        <SocialLinks links={ links } />
+      <article className={styles.container}>
+        <h2 className={styles.container__heading}>{ name }</h2>
+        <img className={styles.container__image} src={ image } alt={ name } />
+        <div className={styles.container__links}>
+          <SocialLinks links={ links } />
+        </div>
       </article>
     );
 }

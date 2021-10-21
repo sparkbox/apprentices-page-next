@@ -3,6 +3,7 @@ import SocialLinks from "@/components/SocialLinks/SocialLinks";
 
 const Components = () => {
   const links = [
+    { href: "personal", text: "Personal"},
     { href: "https://www.linkedin.com/", text: "Linkedin" },
     { href: "https://www.github.com/", text: "Github" },
   ];
@@ -13,7 +14,9 @@ const Components = () => {
       <h2>Social Links</h2>
       <SocialLinks links={links} />
       <h2>Apprentice</h2>
-      <Apprentice name="First Last" image="/apprentices/image.png" links={ links } />
+      <div style={{width: '320px'}}>
+        <Apprentice name="Rise Erpelding" image="/apprentices/image.png" links={ links } />
+      </div>
     </main>
   );
 }
