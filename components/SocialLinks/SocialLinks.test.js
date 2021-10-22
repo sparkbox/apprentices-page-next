@@ -7,8 +7,6 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import SocialLinks from './SocialLinks';
 
-const consoleSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
-
 describe('the Link component', () => {
   it('renders nothing when passed empty array', async () => {
     const { container } = render(<SocialLinks links={[]} />);
@@ -32,16 +30,5 @@ describe('the Link component', () => {
     expect(links[0]).toHaveTextContent('facebook');
     expect(links[1]).toHaveAttribute('href', 'https://www.google.com/');
     expect(links[1]).toHaveTextContent('google');
-  });
-
-  it('renders and logs error if the links type is mismatched', () => {
-    render(<SocialLinks
-      links={[
-        { href: 'https://www.facebook.com/', text: 4 },
-        { href: 'https://www.google.com/', text: 'google' }
-        ]}
-    />);
-    expect(console.error).toBeCalledTimes(1);
-    consoleSpy.mockClear();
   });
 });
