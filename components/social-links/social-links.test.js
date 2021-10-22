@@ -5,7 +5,7 @@
 import * as React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import SocialLinks from './SocialLinks';
+import SocialLinks from './social-links';
 
 describe('the Link component', () => {
   it('renders nothing when passed empty array', async () => {

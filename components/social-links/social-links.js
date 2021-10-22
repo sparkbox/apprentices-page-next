@@ -1,7 +1,6 @@
-import React from 'react'
 import Link from '../link/link';
 import PropTypes from 'prop-types';
-import styles from './SocialLinks.module.scss';
+import styles from './social-links.module.scss';
 
 const SocialLinks = ({ links = []}) => {
     return (

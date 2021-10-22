@@ -2,10 +2,10 @@
 /* Rule above is ignored because next Image component requires width and height props */
 
 import React from 'react'
-import SocialLinks from '../SocialLinks/SocialLinks';
+import SocialLinks from '../social-links/social-links';
 import PropTypes from 'prop-types';
-import styles from './Apprentice.module.scss';
-import { linksPropTypes } from '../SocialLinks/SocialLinks';
+import styles from './apprentice.module.scss';
+import { linksPropTypes } from '../social-links/social-links';
 
 const Apprentice = ({ image, name, links=[] }) => {
     return (
