@@ -22,8 +22,8 @@ describe('the Link component', () => {
     render(<SocialLinks
       links={[
         { href: 'https://www.facebook.com/', text: 'facebook' },
-        { href: 'https://www.google.com/', text: 'google' }
-        ]}
+        { href: 'https://www.google.com/', text: 'google' },
+      ]}
     />);
     const links = screen.getAllByRole('link');
     expect(links[0]).toHaveAttribute('href', 'https://www.facebook.com/');

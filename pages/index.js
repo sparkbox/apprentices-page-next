@@ -1,5 +1,6 @@
-import Head from 'next/head'
-import styles from './index.module.scss'
+import React from 'react';
+import Head from 'next/head';
+import styles from './index.module.scss';
 
 const Home = () => (
   <div className={styles.container}>
@@ -12,6 +13,6 @@ const Home = () => (
       <h1>Home</h1>
     </main>
   </div>
-)
+);
 
-export default Home
+export default Home;

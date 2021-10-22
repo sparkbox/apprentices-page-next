@@ -2,6 +2,7 @@
  * @jest-environment jsdom
  */
 
+import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import Apprentice from './apprentice';
@@ -17,7 +18,7 @@ describe('the Apprentice component', () => {
       { href: 'https://www.github.com/', text: 'Github' },
     ];
 
-    render(<Apprentice image='/apprentices/image.png' name='First Last' links={ links } />);
+    render(<Apprentice image="/apprentices/image.png" name="First Last" links={links} />);
 
     image = screen.getByRole('img');
     name = screen.getByRole('heading');
