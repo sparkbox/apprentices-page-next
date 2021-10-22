@@ -18,11 +18,13 @@ const SocialLinks = ({ links = []}) => {
     )
 };
 
+export const linksPropTypes = PropTypes.arrayOf(PropTypes.shape({
+  href: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+}));
+
 SocialLinks.propTypes = {
-  links: PropTypes.arrayOf(PropTypes.shape({
-    href: PropTypes.String,
-    text: PropTypes.String,
-  })),
+  links: linksPropTypes,
 };
 
 export default SocialLinks;

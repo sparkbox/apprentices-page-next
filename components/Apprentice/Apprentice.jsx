@@ -3,7 +3,9 @@
 
 import React from 'react'
 import SocialLinks from '../SocialLinks/SocialLinks';
+import PropTypes from 'prop-types';
 import styles from './Apprentice.module.scss';
+import { linksPropTypes } from '../SocialLinks/SocialLinks';
 
 const Apprentice = ({ image, name, links=[] }) => {
     return (
@@ -15,6 +17,12 @@ const Apprentice = ({ image, name, links=[] }) => {
         </div>
       </article>
     );
+}
+
+Apprentice.propTypes = {
+  image: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  links: linksPropTypes,
 }
 
 export default Apprentice;
