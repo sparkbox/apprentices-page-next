@@ -1,0 +1,95 @@
+$c-highlight-pink: #FE3CB0;
+$c-highlight-blue: #45e6fe;
+$c-highlight-green: #01F5AC;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 1rem;
+
+  .text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    order: 1;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(65, 1fr);
+    grid-template-rows: repeat(19, 1fr);
+
+    img {
+      max-width: 100%;
+      margin-top: -5px;
+    }
+
+    .image1 {
+      grid-area: 2 / 18 / 7 / 41
+    }
+    .image2 {
+      grid-area: 7 / 7 / 11 / 18;
+    }
+    .image3 {
+      grid-area: 7 / 41 / 12 / 64;
+    }
+    .image4 {
+      grid-area: 12 / 18 / 17 / 41;
+    }
+    .image5 {
+      grid-area: 17 / 41 / 20 / 51;
+    }
+    // Triangle: Top Right
+    .shape1 {
+      grid-area: 1 / 37 / 3 / 46;
+      
+      path { 
+        stroke: $c-highlight-pink;
+      }
+    }
+    // Circle: Top Left
+    .shape2 {
+      grid-area: 3 / 11 / 7 / 20;
+
+      circle {
+        stroke: $c-highlight-green;
+      }
+    }
+    // Triangle: Middle Left
+    .shape3 {
+      grid-area: 6 / 2 / 9 / 9;
+    }
+    // Circle: Middle Right
+    .shape4 {
+      grid-area: 7 / 30 / 12 / 44;
+
+      circle {
+        stroke: $c-highlight-blue;
+        stroke-width: 0.75;
+      }
+    }
+    // Triangle: Bottom Left
+    .shape5 {
+      grid-area: 14 / 6 / 19 / 26;
+
+      path {
+        stroke: $c-highlight-green;
+        stroke-width: 0.5;
+      }
+    }
+    // Circle: Bottom Right
+    .shape6 {
+      grid-area: 13 / 39 / 15 / 44;
+
+      circle {
+        stroke: rgb(40, 242, 252);
+        stroke-width: 1.5; 
+      }
+    }
+    // Triangle: Bottom Right
+    .shape7 {
+      grid-area: 16 / 48 / 19 / 55;
+    }
+  }
+}

@@ -3,6 +3,7 @@ import Link from '../components/link/link';
 import Apprentice from '../components/apprentice/apprentice';
 import SocialLinks from '../components/social-links/social-links';
 import ApprenticeQualities from '../components/apprentice-qualities/apprentice-qualities';
+import { Hero } from '../components/hero/hero';
 
 const Components = () => {
   const links = [
@@ -24,6 +25,8 @@ const Components = () => {
       </div>
       <h2>Apprentice Qualities</h2>
       <ApprenticeQualities />
+      <h2>Hero</h2>
+      <Hero />
     </main>
   );
 };
