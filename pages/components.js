@@ -2,6 +2,7 @@ import React from 'react';
 import Link from '../components/link/link';
 import Apprentice from '../components/apprentice/apprentice';
 import SocialLinks from '../components/social-links/social-links';
+import ApprenticeQualities from '@/components/apprentice-qualities/apprentice-qualities';
 
 const Components = () => {
   const links = [
@@ -21,6 +22,8 @@ const Components = () => {
       <div style={{ width: '320px' }}>
         <Apprentice name="Rise Erpelding" image="/apprentices/image.png" links={links} />
       </div>
+      <h2>Apprentice Qualities</h2>
+      <ApprenticeQualities />
     </main>
   );
 };
