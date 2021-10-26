@@ -1,76 +1,114 @@
+$c-highlight-green: #01F5AC;
+
+// TODO: make padding 2 on both sides a global variable
+
 .primary {
-  color: #01F5AC;
+  color: $c-highlight-green;
 }
 
 
 .apprentice-qualities {
-  margin: 1rem;
-  display: flex;
-  flex-direction: row;
-  
+  width: 100%;
+  min-height: 50rem;
 
-  & article {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1rem;
-    line-height: 137%;
-    order: 3;
+  &__main {
+    margin: auto;
   }
 
   &__image {
     display: none;
   }
 
-  &__header {
-    letter-spacing: -0.02em;
-    font-size: 25px;
-    line-height: 28px;
-    order: 2;
-  }
+  &__article {
+    &-text {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1rem;
+      line-height: 1.375rem;
+      padding: 0 2rem;
+    }
 
-  &__flavor {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 220%;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    order: 1;
-    margin-bottom: 0;
-  }
+    &-heading {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 0.938rem;
+      line-height: 2.063rem;
+      letter-spacing: 0.1rem;
+      padding: 0 2rem;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
 
-  &__body {
-    display: flex;
-    flex-direction: column;
+    &-subheading {
+      margin: 0;
+      padding: 0.5rem 2rem 0;
+      letter-spacing: -0.02rem;
+      font-size: 1.563rem;
+      line-height: 1.75rem;
+    }
   }
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 700px) {
   .apprentice-qualities {
     position: relative;
     padding-top: 3rem;
+    background:
+      url('../../public/apprentice-qualities-background.svg'),
+      url('../../public/apprentice-qualities-background.svg'),
+      url('../../public/apprentice-qualities-background.svg');
+    background-repeat: repeat-x;
+    background-size: 20rem;
+    background-position:
+      -8rem 0rem,
+      2rem 17.4rem,
+      -8rem 34.7rem;
+
+
+    &__main {
+      display: flex;
+      position: relative;
+    }
 
     &__image {
-      display: revert;
+      display: block;
       position: absolute;
-      top: 0;
-      left: -6%;
-      width: 100%;
-      min-width: 40rem;
+      left: 1.2rem;
+      top: 14.4rem;
+      pointer-events: none;
+      width: 21.5rem;
     }
     
-    &__body {
-      padding-top: 7rem;
-      margin-left: 50%;
-      z-index: 10;
+    &__article {
+      position: absolute;
+      left: 23rem;
+      top: 8rem;
     }
   }
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 1150px) {
   .apprentice-qualities {
-    &__body {
-      padding-top: 18rem;
+    background-position:
+      calc(50% - 13.6rem) 0rem,
+      calc(50% - 3.6rem) 17.3rem,
+      calc(50% - 13.6rem) 34.7rem;
+
+    &__main {
+      flex-direction: row;
+      justify-content: center;
+      padding-top: 5rem;
+    }
+
+    &__image {
+      position: revert;
+      padding-top: 9.3rem;
+    }
+
+    &__article {
+      position: revert;
+      max-width: 90ch;
+      padding-top: 3rem;
     }
   }
 }

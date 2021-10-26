@@ -2,7 +2,7 @@ import React from 'react';
 import Link from '../components/link/link';
 import Apprentice from '../components/apprentice/apprentice';
 import SocialLinks from '../components/social-links/social-links';
-import ApprenticeQualities from '@/components/apprentice-qualities/apprentice-qualities';
+import ApprenticeQualities from '../components/apprentice-qualities/apprentice-qualities';
 
 const Components = () => {
   const links = [
