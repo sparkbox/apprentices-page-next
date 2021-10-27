@@ -21,7 +21,7 @@ const Components = () => {
       <SocialLinks links={links} />
       <h2>Apprentice</h2>
       <div style={{ width: '320px' }}>
-        <Apprentice name="Rise Erpelding" image="/apprentices/image.png" links={links} />
+        <Apprentice name="Rise Erpelding" image="/apprentices/Rise.png" links={links} />
       </div>
       <h2>Apprentice Qualities</h2>
       <ApprenticeQualities />

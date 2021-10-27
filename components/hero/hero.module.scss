@@ -6,9 +6,19 @@ $c-highlight-green: #01F5AC;
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-left: 1rem;
-  padding-top: 1rem;
-  background: radial-gradient(149.02% 80.01% at 91.08% 0%, #13282D 0%, rgba(9, 9, 9, 0) 100%);
+  // This needs to be moved into the global styles:
+  background: radial-gradient(149.02% 80.01% at 91.08% 0%, #0e1c1f 0%, rgba(9, 9, 9, 0) 100%);
+  
+  &__sparkbox-logo {
+    &--text {
+      display: none;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
 
   &__text {
     width: 100%;
@@ -112,6 +122,80 @@ $c-highlight-green: #01F5AC;
     &--shape7 {
       display: none;
       grid-area: 16 / 48 / 19 / 55;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+
+    &__sparkbox-logo {
+      &--no-text {
+        display: none;
+      }
+      &--text {
+        display: block;
+        padding: 1rem;
+      }
+    }
+
+    &__text {
+      order: 1;
+      margin-top: -5rem;
+      h1 {
+        width: 60%;
+        font-size: 3rem;
+      }
+      p {
+        width: 80%;
+        font-size: 1.25rem;
+      }
+    }
+
+    &__art-container {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__grid {
+      width: 80%;
+    }
+  }
+
+  @media (min-width: 1124px) {
+    .hero {
+      &__container {
+        flex-direction: row;
+        align-items: center;
+      }
+      &__text {
+        order: 0;
+ 
+        p {
+          font-size: 1.5rem;
+        }
+      }
+
+      &__grid {
+        width: 100%;
+        
+        &--image4 {
+          display: block;
+        }
+        &--image5 {
+          display: block;
+        }
+        &--shape5 {
+          display: block;
+        }
+        &--shape6 {
+          display: block;
+        }
+        &--shape7 {
+          display: block;
+        }
+      }
     }
   }
 }
