@@ -14,6 +14,7 @@ const Components = () => {
 
   return (
     <main>
+      <Hero />
       <h1>Components</h1>
       <h2>Link</h2>
       <Link href="github.com">Github</Link>
@@ -25,8 +26,6 @@ const Components = () => {
       </div>
       <h2>Apprentice Qualities</h2>
       <ApprenticeQualities />
-      <h2>Hero</h2>
-      <Hero />
     </main>
   );
 };

@@ -1,16 +1,37 @@
+// TODO: Move variables and utilities to another file 
+
 $c-highlight-pink: #FE3CB0;
 $c-highlight-blue: #45e6fe;
 $c-highlight-green: #01F5AC;
 
+@mixin visually-hidden {
+  position: fixed;
+  right: 100%;
+  bottom: 100%;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+
+  &:focus {
+    left: 0;
+    right: auto;
+    top: 0;
+    bottom: auto;
+    clip: auto;
+    clip-path: none;
+  }
+}
+
 .hero {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  // This needs to be moved into the global styles:
-  background: radial-gradient(149.02% 80.01% at 91.08% 0%, #0e1c1f 0%, rgba(9, 9, 9, 0) 100%);
+
+  &__header-label {
+    @include visually-hidden();
+  }
   
   &__sparkbox-logo {
-    &--text {
+    &--full {
       display: none;
     }
   }
@@ -21,46 +42,45 @@ $c-highlight-green: #01F5AC;
   }
 
   &__text {
-    width: 100%;
     display: flex;
     flex-direction: column;
     order: 1;
-    h1 {
-      padding: 1rem;
-      margin: 0;
-    }
+    h1,
     p {
       padding: 1rem;
       margin: 0;
     }
   }
 
-  &__grid {
+  &__grid {  // This grid is for the hero images and svgs 
     display: grid;
     grid-template-columns: repeat(65, 1fr);
-    grid-template-rows: repeat(11, 1fr); // 19 in desktop 
+    grid-template-rows: repeat(11, 1fr);
   
     img {
       max-width: 100%;
       margin-top: -5px;
-    }
-  
-    &--image1 {
-      grid-area: 2 / 18 / 7 / 41
-    }
-    &--image2 {
-      grid-area: 7 / 7 / 11 / 18;
-    }
-    &--image3 {
-      grid-area: 7 / 41 / 12 / 64;
-    }
-    &--image4 {
-      grid-area: 12 / 18 / 17 / 41;
-      display: none;
-    }
-    &--image5 {
-      grid-area: 17 / 41 / 20 / 51;
-      display: none;
+
+      // Images below are placed in the grid in order from top to bottom and left to right
+      &:nth-child(1) {
+        grid-area: 2 / 18 / 7 / 41;
+      }
+      &:nth-child(2) {
+        grid-area: 7 / 7 / 11 / 18;
+      }
+      &:nth-child(3) {
+        grid-area: 7 / 41 / 12 / 64;
+      }
+      &:nth-child(4) {
+        grid-area: 12 / 18 / 17 / 41;
+      }
+      &:nth-child(5) {
+        grid-area: 17 / 41 / 20 / 51;
+      }
+      // In mobile and tablet view only 3 images are shown
+      &:nth-child(n + 4) {
+        display: none;
+      }
     }
 
     // Triangle: Top Right
@@ -121,27 +141,28 @@ $c-highlight-green: #01F5AC;
     // Triangle: Bottom Right
     &--shape7 {
       display: none;
-      grid-area: 16 / 48 / 19 / 55;
+      grid-area: 16 / 49 / 19 / 56;
     }
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .hero {
-
     &__sparkbox-logo {
-      &--no-text {
+      &--half {
         display: none;
       }
-      &--text {
+      &--full {
         display: block;
         padding: 1rem;
+        margin-bottom: -10rem;
       }
     }
 
     &__text {
       order: 1;
-      margin-top: -5rem;
+      width: 90%;
+      margin-top: -3.5rem;
       h1 {
         width: 60%;
         font-size: 3rem;
@@ -159,33 +180,49 @@ $c-highlight-green: #01F5AC;
     }
 
     &__grid {
-      width: 80%;
+      width: 70%;
     }
   }
 
-  @media (min-width: 1124px) {
+  @media (min-width: 70.25rem) {
     .hero {
+      &__sparkbox-logo {
+        &--full {
+          margin-bottom: 0rem;
+        }
+      }
+
       &__container {
         flex-direction: row;
         align-items: center;
       }
+
       &__text {
+        width: 100%;
         order: 0;
- 
+        padding: 1rem;
+        margin-top: 2rem;
+        h1 {
+          font-size: 4rem;
+        }
         p {
           font-size: 1.5rem;
         }
       }
 
+      &__art-container {
+        justify-content: flex-start;
+        margin-top: -4rem;
+      }
+
       &__grid {
         width: 100%;
-        
-        &--image4 {
-          display: block;
+        img {
+          &:nth-child(n + 4) {
+            display: block;
+          }
         }
-        &--image5 {
-          display: block;
-        }
+
         &--shape5 {
           display: block;
         }

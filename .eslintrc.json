@@ -2,6 +2,9 @@
   "root": true,
   "extends": ["@sparkbox/eslint-config-sparkbox"],
   "plugins": ["testing-library"],
+  "rules": {
+    "dot-notation": "off"
+  },
   "overrides": [
     // Only uses Testing Library lint rules in test files
     {
