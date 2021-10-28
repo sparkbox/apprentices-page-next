@@ -1,7 +1,5 @@
 $c-highlight-green: #01F5AC;
 
-// TODO: make padding 2 on both sides a global variable
-
 .primary {
   color: $c-highlight-green;
 }
@@ -54,6 +52,7 @@ $c-highlight-green: #01F5AC;
     position: relative;
     padding-top: 3rem;
     background:
+      linear-gradient(180deg, #0A0A0A, 33%, transparent),
       url('../../public/apprentice-qualities-background.svg'),
       url('../../public/apprentice-qualities-background.svg'),
       url('../../public/apprentice-qualities-background.svg');
@@ -63,7 +62,6 @@ $c-highlight-green: #01F5AC;
       -8rem 0rem,
       2rem 17.4rem,
       -8rem 34.7rem;
-
 
     &__main {
       display: flex;
