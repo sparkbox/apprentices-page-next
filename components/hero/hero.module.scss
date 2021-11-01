@@ -22,10 +22,11 @@ $c-highlight-green: #01F5AC;
 }
 
 .hero {
-  width: 100%;
+  max-width: 67.5rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
   &__header-label {
     @include visually-hidden();
@@ -216,7 +217,7 @@ $c-highlight-green: #01F5AC;
         font-size: 4rem;
       }
       p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
       }
     }
 
