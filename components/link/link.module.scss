@@ -1,4 +1,6 @@
+@use '../../styles/colors' as *;
+
 .link {
-  color: #FFF;
+  color: $primary-text-color;
   margin-right: 3px;
 }

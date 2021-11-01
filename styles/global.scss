@@ -1,3 +1,5 @@
+@use 'colors' as *;
+
 @mixin smooth-font {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,7 +22,11 @@ body {
     Droid Sans,
     Helvetica Neue,
     sans-serif;
-  background-color: #0A0A0A;
+  color: $primary-text-color;
+}
+
+html {
+  background-color: $background-color;
 }
 
 body {

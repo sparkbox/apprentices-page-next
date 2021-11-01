@@ -1,9 +1,8 @@
-$c-highlight-green: #01F5AC;
+@use '../../styles/colors' as *;
 
 .primary {
   color: $c-highlight-green;
 }
-
 
 .apprentice-qualities {
   width: 100%;
@@ -52,7 +51,7 @@ $c-highlight-green: #01F5AC;
     position: relative;
     padding-top: 3rem;
     background:
-      linear-gradient(180deg, #0A0A0A, 33%, transparent),
+      linear-gradient(180deg, $background-color, 33%, transparent),
       url('../../public/apprentice-qualities-background.svg'),
       url('../../public/apprentice-qualities-background.svg'),
       url('../../public/apprentice-qualities-background.svg');

@@ -1,8 +1,4 @@
-// TODO: Move variables and utilities to another file
-
-$c-highlight-pink: #FE3CB0;
-$c-highlight-blue: #45e6fe;
-$c-highlight-green: #01F5AC;
+@use '../../styles/colors' as *;
 
 @mixin visually-hidden {
   position: fixed;
@@ -153,7 +149,7 @@ $c-highlight-green: #01F5AC;
         grid-area: 13 / 39 / 15 / 44;
 
         circle {
-          stroke: rgb(40, 242, 252);
+          stroke: $c-highlight-blue;
           stroke-width: 1.5;
         }
       }
