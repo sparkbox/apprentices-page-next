@@ -1,0 +1,25 @@
+// fonts needed
+// Sole Sans VF
+// Sole Sans
+// Sole Serif Big Display
+
+@font-face {
+  font-family: "Sole Sans VF";
+  src:
+    url("./fonts/sole-sans-vf.woff2") format("woff2"),
+    url("./fonts/sole-sans-vf.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Sole Sans";
+  src:
+    url("./fonts/sole-sans.woff2") format("woff2"),
+    url("./fonts/sole-sans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Sole Serif Big Display";
+  src:
+    url("./fonts/sole-serif.woff2") format("woff2"),
+    url("./fonts/sole-serif.woff") format("woff");
+}
