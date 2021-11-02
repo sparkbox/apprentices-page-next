@@ -1,5 +1,4 @@
-@mixin smooth-font { 
-  font-smoothing: antialiased;
+@mixin smooth-font {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -23,6 +22,7 @@ body {
     sans-serif;
   background-color: #0A0A0A;
 }
+
 body {
   @include smooth-font();
   background: radial-gradient(80.02% 20.01% at 91.08% 0%, #0F2226  0%, #0A0A0A 100%);
