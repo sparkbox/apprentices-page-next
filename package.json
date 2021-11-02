@@ -5,11 +5,13 @@
   },
   "scripts": {
     "dev": "next dev",
-    "lint": "next lint",
+    "lint": "npm run lint:css && npm run lint:js",
     "build": "next build",
     "start": "next start",
     "test": "jest --watch",
-    "test:ci": "jest --ci"
+    "test:ci": "jest --ci",
+    "lint:css": "npx stylelint \"**/*.scss\" \"**/*.css\"",
+    "lint:js": "next lint"
   },
   "dependencies": {
     "next": "latest",
@@ -19,6 +21,7 @@
   },
   "devDependencies": {
     "@sparkbox/eslint-config-sparkbox": "^2.0.0",
+    "@sparkbox/stylelint-config-sparkbox": "^2.0.0",
     "@testing-library/jest-dom": "5.14.1",
     "@testing-library/react": "12.0.0",
     "@testing-library/user-event": "13.2.1",
@@ -35,6 +38,7 @@
     "identity-obj-proxy": "3.0.0",
     "jest": "27.0.6",
     "react-test-renderer": "17.0.2",
-    "sass": "^1.42.1"
+    "sass": "^1.42.1",
+    "stylelint": "^13.13.1"
   }
 }

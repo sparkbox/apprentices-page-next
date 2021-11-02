@@ -1,4 +1,4 @@
-// TODO: Move variables and utilities to another file 
+// TODO: Move variables and utilities to another file
 
 $c-highlight-pink: #FE3CB0;
 $c-highlight-blue: #45e6fe;
@@ -31,7 +31,7 @@ $c-highlight-green: #01F5AC;
   &__header-label {
     @include visually-hidden();
   }
-  
+
   &__sparkbox-logo {
     &--full {
       display: none;
@@ -47,15 +47,18 @@ $c-highlight-green: #01F5AC;
     display: flex;
     flex-direction: column;
     order: 1;
+
     h1,
     p {
       padding: 1rem;
       margin: 0;
     }
   }
+
   &__art-container {
     display: none;
   }
+
   &__grid {
     display: none;
   }
@@ -64,11 +67,12 @@ $c-highlight-green: #01F5AC;
     &__art-container {
       display: block;
     }
-    &__grid {  // This grid is for the hero images and svgs 
+
+    &__grid {  // This grid is for the hero images and svgs
       display: grid;
       grid-template-columns: repeat(65, 1fr);
       grid-template-rows: repeat(11, 1fr);
-    
+
       img {
         max-width: 100%;
         margin-top: -5px;
@@ -77,15 +81,19 @@ $c-highlight-green: #01F5AC;
         &:nth-child(1) {
           grid-area: 2 / 18 / 7 / 41;
         }
+
         &:nth-child(2) {
           grid-area: 7 / 7 / 11 / 18;
         }
+
         &:nth-child(3) {
           grid-area: 7 / 41 / 12 / 64;
         }
+
         &:nth-child(4) {
           grid-area: 12 / 18 / 17 / 41;
         }
+
         &:nth-child(5) {
           grid-area: 17 / 41 / 20 / 51;
         }
@@ -98,8 +106,8 @@ $c-highlight-green: #01F5AC;
       // Triangle: Top Right
       &--shape1 {
         grid-area: 1 / 37 / 3 / 46;
-        
-        path { 
+
+        path {
           stroke: $c-highlight-pink;
         }
       }
@@ -107,7 +115,7 @@ $c-highlight-green: #01F5AC;
       // Circle: Top Left
       &--shape2 {
         grid-area: 3 / 11 / 7 / 20;
-    
+
         circle {
           stroke: $c-highlight-green;
         }
@@ -121,7 +129,7 @@ $c-highlight-green: #01F5AC;
       // Circle: Middle Right
       &--shape4 {
         grid-area: 7 / 30 / 12 / 44;
-    
+
         circle {
           stroke: $c-highlight-blue;
           stroke-width: 0.75;
@@ -132,7 +140,7 @@ $c-highlight-green: #01F5AC;
       &--shape5 {
         display: none;
         grid-area: 14 / 6 / 19 / 26;
-    
+
         path {
           stroke: $c-highlight-green;
           stroke-width: 0.5;
@@ -143,13 +151,13 @@ $c-highlight-green: #01F5AC;
       &--shape6 {
         display: none;
         grid-area: 13 / 39 / 15 / 44;
-    
+
         circle {
           stroke: rgb(40, 242, 252);
-          stroke-width: 1.5; 
+          stroke-width: 1.5;
         }
       }
-      
+
       // Triangle: Bottom Right
       &--shape7 {
         display: none;
@@ -157,49 +165,52 @@ $c-highlight-green: #01F5AC;
       }
     }
   }
-    
 
-    @media (min-width: 48rem) {
-      &__sparkbox-logo {
-        &--half {
-          display: none;
-        }
-        &--full {
-          display: block;
-          padding: 1rem;
-          margin-bottom: -10rem;
-        }
+
+  @media (min-width: 48rem) {
+    &__sparkbox-logo {
+      &--half {
+        display: none;
       }
 
-      &__text {
-        order: 1;
-        width: 90%;
-        margin-top: -3.5rem;
-        h1 {
-          width: 60%;
-          font-size: 3rem;
-        }
-        p {
-          width: 80%;
-          font-size: 1.25rem;
-        }
-      }
-
-      &__art-container {
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-      }
-
-      &__grid {
-        width: 70%;
+      &--full {
+        display: block;
+        padding: 1rem;
+        margin-bottom: -10rem;
       }
     }
+
+    &__text {
+      order: 1;
+      width: 90%;
+      margin-top: -3.5rem;
+
+      h1 {
+        width: 60%;
+        font-size: 3rem;
+      }
+
+      p {
+        width: 80%;
+        font-size: 1.25rem;
+      }
+    }
+
+    &__art-container {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__grid {
+      width: 70%;
+    }
+  }
 
   @media (min-width: 70.25rem) {
     &__sparkbox-logo {
       &--full {
-        margin-bottom: 0rem;
+        margin-bottom: 0;
       }
     }
 
@@ -213,9 +224,11 @@ $c-highlight-green: #01F5AC;
       order: 0;
       padding: 1rem;
       margin-top: 2rem;
+
       h1 {
         font-size: 4rem;
       }
+
       p {
         font-size: 1.2rem;
       }
@@ -228,6 +241,7 @@ $c-highlight-green: #01F5AC;
 
     &__grid {
       width: 100%;
+
       img {
         &:nth-child(n + 4) {
           display: block;
@@ -237,9 +251,11 @@ $c-highlight-green: #01F5AC;
       &--shape5 {
         display: block;
       }
+
       &--shape6 {
         display: block;
       }
+
       &--shape7 {
         display: block;
       }

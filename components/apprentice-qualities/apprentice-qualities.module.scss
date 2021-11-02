@@ -59,7 +59,7 @@ $c-highlight-green: #01F5AC;
     background-repeat: repeat-x;
     background-size: 20rem;
     background-position:
-      -8rem 0rem,
+      -8rem 0,
       2rem 17.4rem,
       -8rem 34.7rem;
 
@@ -76,7 +76,7 @@ $c-highlight-green: #01F5AC;
       pointer-events: none;
       width: 21.5rem;
     }
-    
+
     &__article {
       position: absolute;
       left: 23rem;
@@ -88,7 +88,7 @@ $c-highlight-green: #01F5AC;
 @media screen and (min-width: 1150px) {
   .apprentice-qualities {
     background-position:
-      calc(50% - 13.6rem) 0rem,
+      calc(50% - 13.6rem) 0,
       calc(50% - 3.6rem) 17.3rem,
       calc(50% - 13.6rem) 34.7rem;
 
