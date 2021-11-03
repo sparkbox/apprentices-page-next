@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './hero.module.scss';
 
-export const Hero = () => (
+const Hero = () => (
   <header className={styles['hero']}>
     <div>
       <span className={styles['hero__header-label']}>Sparkbox</span>
@@ -65,3 +65,5 @@ export const Hero = () => (
     </div>
   </header>
 );
+
+export default Hero;

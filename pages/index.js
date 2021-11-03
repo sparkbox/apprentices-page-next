@@ -1,6 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 import styles from './index.module.scss';
+import ApprenticeQualities from '../components/apprentice-qualities/apprentice-qualities';
+import Hero from '../components/hero/hero';
 
 const Home = () => (
   <div className={styles.container}>
@@ -10,7 +12,8 @@ const Home = () => (
     </Head>
 
     <main>
-      <h1>Home</h1>
+      <Hero />
+      <ApprenticeQualities />
     </main>
   </div>
 );
