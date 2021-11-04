@@ -1,25 +1,69 @@
-// fonts needed
-// Sole Sans VF
-// Sole Sans
-// Sole Serif Big Display
+/**
+ * @license
+ * MyFonts Webfont Build ID 3974518, 2020-11-11T12:47:16-0500
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: Sole Sans Variable Font by CAST
+ * URL: https://www.myfonts.com/fonts/cast/sole-sans/vf/
+ *
+ * Webfont: Sole Sans Sole Sans by CAST
+ * URL: https://www.myfonts.com/fonts/cast/sole-sans/regular
+ *
+ * Webfont: Sole Serif Big Display by CAST
+ * URL: https://www.myfonts.com/fonts/cast/sole-serif/big-display-regular/
+ *
+ *
+ * Webfonts copyright: &amp;#x00A9; 2018 CAST Cooperativa Anonima Servizi Tipografici. All rights reserved.
+ *
+ * © 2020 MyFonts Inc
+*/
 
 @font-face {
   font-family: "Sole Sans VF";
   src:
+<<<<<<< HEAD
     url("./fonts/sole-sans-vf.woff2") format("woff2"),
     url("./fonts/sole-sans-vf.woff") format("woff");
+=======
+    url("../public/fonts/sole-sans-vf.woff2") format("woff2"),
+    url("../public/fonts/sole-sans-vf.woff") format("woff");
+>>>>>>> 471396d (wip)
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
   font-family: "Sole Sans";
   src:
+<<<<<<< HEAD
     url("./fonts/sole-sans.woff2") format("woff2"),
     url("./fonts/sole-sans.woff") format("woff");
+=======
+    url("../public/fonts/sole-sans.woff2") format("woff2"),
+    url("../public/fonts/sole-sans.woff") format("woff");
+>>>>>>> 471396d (wip)
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
-  font-family: "Sole Serif Big Display";
+  font-family: "Sole Serif";
   src:
+<<<<<<< HEAD
     url("./fonts/sole-serif.woff2") format("woff2"),
     url("./fonts/sole-serif.woff") format("woff");
+=======
+    url("../public/fonts/sole-serif.woff2") format("woff2"),
+    url("../public/fonts/sole-serif.woff") format("woff");
+>>>>>>> 471396d (wip)
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
 }

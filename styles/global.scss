@@ -1,6 +1,9 @@
 @use 'colors' as *;
 @use "fonts";
 
+$font-default:  sole sans, 'Trebuchet MS', -apple-system, blinkmacsystemfont, helvetica neue, sans-serif;
+
+
 @mixin smooth-font {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -29,6 +32,9 @@ body {
 
 html {
   background-color: $background-color;
+  font-family: $font-default;
+  background-color: #0A0A0A;
+  color: white;
 }
 
 body {

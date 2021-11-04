@@ -14,8 +14,6 @@ const Components = () => {
 
   return (
     <main>
-      <Hero />
-      <ApprenticeQualities />
       <h1>Components</h1>
       <h2>Link</h2>
       <Link href="github.com">Github</Link>
@@ -25,6 +23,10 @@ const Components = () => {
       <div style={{ width: '320px' }}>
         <Apprentice name="Rise Erpelding" image="/apprentices/Rise.png" links={links} />
       </div>
+      <h2>Hero</h2>
+      <Hero />
+      <h2>Apprentice Qualities</h2>
+      <ApprenticeQualities />
     </main>
   );
 };
