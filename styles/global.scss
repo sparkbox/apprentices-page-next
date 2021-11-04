@@ -1,7 +1,8 @@
 @use 'colors' as *;
 @use "fonts";
 
-$font-default:  sole sans, 'Trebuchet MS', -apple-system, blinkmacsystemfont, helvetica neue, sans-serif;
+$font-default:
+  'Sole Sans', 'Trebuchet MS', -apple-system, blinkmacsystemfont, 'Helvetica Neue', sans-serif;
 
 
 @mixin smooth-font {
@@ -13,27 +14,13 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family:
-    Sole Sans,
-    'Trebuchet MS',
-    -apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Fira Sans,
-    Droid Sans,
-    Helvetica Neue,
-    sans-serif;
+  font-family: $font-default;
   color: $primary-text-color;
 }
 
 html {
   background-color: $background-color;
   font-family: $font-default;
-  background-color: #0A0A0A;
   color: white;
 }
 
@@ -49,4 +36,13 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Sole Serif', serif;
 }

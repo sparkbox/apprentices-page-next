@@ -10,15 +10,15 @@ const ApprenticeQualities = () => (
         className={styles['apprentice-qualities__image']}
       />
       <article className={styles['apprentice-qualities__article']}>
-        <h2 className={`${styles.primary} ${styles['apprentice-qualities__article-heading']}`}>
+        <p className={`${styles.primary} ${styles['apprentice-qualities__article-heading']}`}>
           What we look for
-        </h2>
-        <p className={
+        </p>
+        <h2 className={
           styles['apprentice-qualities__article-subheading']
         }
         >
           Qualities of Successful Apprentices
-        </p>
+        </h2>
         <div className={styles['apprentice-qualities__article-text']}>
           <p>
             We build responsive, standards-compliant, content-focused,
