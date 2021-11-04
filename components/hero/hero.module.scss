@@ -18,11 +18,12 @@
 }
 
 .hero {
-  max-width: 67.5rem;
+  width: 100%;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  background: radial-gradient(80.02% 20.01% at 91.08% 0%, #0F2226  0%, #0A0A0A 100%);
 
   &__header-label {
     @include visually-hidden();
@@ -35,6 +36,12 @@
   }
 
   &__container {
+    max-width: 67.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__header-content {
     display: flex;
     flex-direction: column;
   }
@@ -211,9 +218,8 @@
       }
     }
 
-    &__container {
+    &__header-content {
       flex-direction: row;
-      align-items: center;
     }
 
     &__text {
