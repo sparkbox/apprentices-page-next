@@ -20,6 +20,7 @@
 
 .hero {
   width: $component-width;
+  // The line below needs should be reviewed by another developer or designer (min height or no min height?):
   // min-height: 100vh;
   display: flex;
   justify-content: center;
