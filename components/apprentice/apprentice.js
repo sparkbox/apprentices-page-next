@@ -13,11 +13,13 @@ const Apprentice = ({ image, name, links }) => (
   </article>
 );
 
-Apprentice.propTypes = {
+export const apprenticePropTypes = {
   image: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   links: linksPropTypes,
 };
+
+Apprentice.propTypes = apprenticePropTypes;
 
 Apprentice.defaultProps = {
   links: [],

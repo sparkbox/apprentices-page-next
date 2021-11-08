@@ -233,6 +233,31 @@ exports[`renders homepage unchanged 1`] = `
         </article>
       </div>
     </section>
+    <section
+      className="current-apprentices"
+    >
+      <div
+        className="current-apprentices__content"
+      >
+        <div
+          className="current-apprentices__header"
+        >
+          <h2>
+            Current Apprentices
+            <span
+              className="current-apprentices__version"
+            >
+               
+              v
+              
+            </span>
+          </h2>
+        </div>
+        <div
+          className="card-container"
+        />
+      </div>
+    </section>
   </main>
 </div>
 `;
