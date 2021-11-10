@@ -7,7 +7,6 @@
 
 .apprentice-qualities {
   width: $component-width;
-  min-height: 50rem;
 
   &__main {
     margin: auto;
@@ -46,9 +45,9 @@
   }
 }
 
-@media screen and (min-width: 700px) {
+@media (min-width: 50rem) {
   .apprentice-qualities {
-
+    min-height: 50rem;
     position: relative;
     padding-top: 3rem;
     background:
@@ -87,7 +86,7 @@
   }
 }
 
-@media screen and (min-width: 1150px) {
+@media (min-width: 70.25rem) {
   .apprentice-qualities {
     background-position:
       calc(50% - 16rem) 0,

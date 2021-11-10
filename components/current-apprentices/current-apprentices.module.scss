@@ -1,0 +1,76 @@
+@use '../../styles/colors' as *;
+@use '../../styles/spacing' as *;
+@use '../../styles/fonts';
+
+.current-apprentices {
+  width: $component-width;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__content {
+    width: 100%;
+    max-width: $max-content-width;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+
+  &__header {
+    text-align: center;
+    padding: 1rem;
+
+    h2 {
+      font-size: 2rem;
+      font-family: 'Sole Sans Extended', sans-serif;
+    }
+  }
+
+  &__version {
+    color: $c-highlight-green;
+  }
+
+  .card-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__card {
+      img {
+        display: none;
+      }
+      width: 18rem;
+      padding: 1rem;
+    }
+
+    @supports (display: grid) {
+      &__card {
+        img {
+          display: block;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 45rem) {
+    &__content {
+      padding: 5rem 2rem;
+    }
+
+    &__header {
+      text-align: left;
+    }
+
+    .card-container {
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (min-width: 70rem) {
+    &__content {
+      padding: 4rem 0;
+    }
+  }
+}
