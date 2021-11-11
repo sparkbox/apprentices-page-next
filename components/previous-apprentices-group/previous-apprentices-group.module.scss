@@ -1,0 +1,38 @@
+@use '../../styles/colors' as *;
+@use '../../styles/spacing' as *;
+@use '../../styles/fonts' as *;
+
+.employee-svg {
+  width: 0.75rem;
+  padding-left: 0.5rem;
+  fill: black;
+}
+
+.past-employee-svg {
+  stroke: $c-highlight-green;
+  stroke-width: 0.75rem;
+}
+
+.current-employee-svg {
+  stroke: $c-highlight-green;
+  stroke-width: 1rem;
+  fill: $c-highlight-green;
+}
+
+.previous-apprentices-group {
+  &__version {
+    color: $c-highlight-pink;
+    padding-bottom: 0.5rem;
+  }
+
+  &__apprentices {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__apprentice {
+    &:not(&:last-child) {
+      padding-bottom: 0.5rem;
+    }
+  }
+}
