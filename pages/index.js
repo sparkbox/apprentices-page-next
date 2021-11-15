@@ -4,6 +4,7 @@ import styles from './index.module.scss';
 import ApprenticeQualities from '../components/apprentice-qualities/apprentice-qualities';
 import Hero from '../components/hero/hero';
 import { currentApprenticeClassPropTypes, CurrentApprentices } from '../components/current-apprentices/current-apprentices';
+import CallToAction from '../components/call-to-action/call-to-action';
 
 export const getStaticProps = async () => ({
   // Links are not currently official in the currentApprentices data:
@@ -45,6 +46,7 @@ const Home = ({ currentApprenticeClass }) => (
       <Hero />
       <ApprenticeQualities />
       <CurrentApprentices currentApprenticeClass={currentApprenticeClass} />
+      <CallToAction />
     </main>
   </div>
 );

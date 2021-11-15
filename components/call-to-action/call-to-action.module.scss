@@ -1,0 +1,223 @@
+@use '../../styles/colors' as *;
+@use '../../styles/spacing' as *;
+
+.call-to-action {
+  width: $component-width;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  box-sizing: border-box;
+  background: radial-gradient(110% 110% at 15.71% 0%, $background-color  85%, #0b1618 100%);
+
+
+  &__container {
+    max-width: $max-content-width;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text-container {
+    order: 1;
+
+    h2 {
+      font-size: 3.25rem;
+      font-family: 'Sole Serif', serif;
+      font-weight: 100;
+    }
+
+    p {
+      margin-bottom: 3rem;
+    }
+
+    a {
+      width: 15rem;
+      padding: 0.5rem;
+      font-size: 1.15rem;
+      border: 3px white solid;
+      color: white;
+      background-color: rgba(0, 0, 0, 0);
+      text-decoration: none;
+
+      &:hover {
+        color: black;
+        background-color: white;
+      }
+    }
+  }
+
+  &__art-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    order: 0;
+  }
+
+  &__grid {
+    display: none;
+  }
+
+  &__footer {
+    width: 100%;
+    max-width: $max-content-width;
+    font-size: 0.75rem;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    order: 2;
+
+    p {
+      width: 70%;
+    }
+  }
+
+  @supports (display:grid) {
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(54, 1fr);
+      grid-template-rows: repeat(11, 1fr);
+
+      img {
+        max-width: 100%;
+
+        // Images below are placed in the grid in order from top to bottom and left to right
+        &:nth-child(1) {
+          grid-area: 2 / 1 / 6 / 22;
+        }
+
+        &:nth-child(2) {
+          grid-area: 6 / 22 / 14 / 44;
+        }
+
+        &:nth-child(3) {
+          grid-area: 4 / 44 / 8 / 55;
+        }
+
+        &:nth-child(4) {
+          grid-area: 10 / 11 / 17 / 22;
+        }
+
+        &:nth-child(5) {
+          grid-area: 10 / 44 / 20 / 66;
+        }
+        // In mobile and tablet view only 3 images are shown
+        &:nth-child(n + 4) {
+          display: none;
+        }
+      }
+
+      // Triangle: Top Left
+      &--shape1 {
+        grid-area: 1 / 20 / 3 / 30;
+
+        path {
+          stroke: $c-highlight-blue;
+        }
+      }
+
+      // Circle: Top Left
+      &--shape2 {
+        grid-area: 4 / 32 / 8 / 42;
+        margin-top: 1.25rem;
+
+        circle {
+          stroke: $c-highlight-green;
+        }
+      }
+
+      // Circle: Bottom Left
+      &--shape3 {
+        grid-area: 10 / 17 / 13 / 24;
+        margin-top: -0.5rem;
+
+        circle {
+          stroke: $c-highlight-pink;
+        }
+      }
+
+      // Triangle: Bottom Right
+      &--shape4 {
+        grid-area: 7 / 30 / 12 / 44;
+        display: none;
+
+        circle {
+          stroke: $c-highlight-blue;
+          stroke-width: 0.75;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 45rem) {
+    &__text-container {
+      width: 100%;
+      margin-top: -10rem;
+
+      p {
+        width: 70%;
+        font-size: 1.5rem;
+      }
+    }
+
+    &__art-container {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__grid {
+      width: 50%;
+    }
+
+    &__footer {
+      font-size: 1rem;
+      margin-top: 10rem;
+    }
+  }
+
+  @media (min-width: 70.25rem) {
+    &__container {
+      flex-direction: row;
+    }
+
+    &__text-container {
+      margin: 5rem 0;
+      order: 0;
+
+      p {
+        margin-bottom: 5rem;
+        width: 100%;
+      }
+    }
+
+    &__grid {
+      width: 90%;
+      grid-template-columns: repeat(67, 1fr);
+      grid-template-rows: repeat(13, 1fr);
+
+      img {
+        &:nth-child(n + 4) {
+          display: block;
+        }
+      }
+
+      &--shape3 {
+        grid-area: 9 / 5 / 11 / 14;
+      }
+
+      &--shape4 {
+        display: block;
+        grid-area: 10 / 28 / 14 / 48;
+        margin-top: -1rem;
+
+        path {
+          stroke: $c-highlight-blue;
+          stroke-width: 0.5px;
+        }
+      }
+    }
+  }
+}
