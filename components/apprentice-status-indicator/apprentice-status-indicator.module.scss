@@ -1,0 +1,20 @@
+@use '../../styles/colors' as *;
+@use '../../styles/spacing' as *;
+@use '../../styles/fonts' as *;
+
+.employee-status {
+  width: 0.75rem;
+  padding-left: 0.5rem;
+  fill: black;
+}
+
+.past-employee-status {
+  stroke: $c-highlight-green;
+  stroke-width: 0.75rem;
+}
+
+.current-employee-status {
+  stroke: $c-highlight-green;
+  stroke-width: 1rem;
+  fill: $c-highlight-green;
+}

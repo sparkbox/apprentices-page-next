@@ -1,29 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './previous-apprentices-group.module.scss';
+import ApprenticeStatusIndicator from '../apprentice-status-indicator/apprentice-status-indicator';
 
-const makePreviousApprentice = (apprentice) => {
-  let svgStyleClass = '';
-  if (apprentice.status === 'current') svgStyleClass = 'current-employee-svg';
-  if (apprentice.status === 'previous') svgStyleClass = 'past-employee-svg';
+const makePreviousApprentice = (apprentice) => (
+  <li
+    className={styles['previous-apprentices-group__apprentice']}
+    data-testid={apprentice.name}
+    key={apprentice.name}
+  >
+    {apprentice.name}
+    <ApprenticeStatusIndicator status={apprentice.status} />
+  </li>
+);
 
-  return (
-    <li
-      className={styles['previous-apprentices-group__apprentice']}
-      data-testid={apprentice.name}
-    >
-      {apprentice.name}
-      <svg id="triangle" viewBox="0 0 100 100" className={styles['employee-svg']}>
-        <polygon
-          points="50 15, 100 100, 0 100"
-          className={styles[svgStyleClass]}
-        />
-      </svg>
-    </li>
-  );
-};
-
-const PreviousApprenticesGroup = ({ version, statuses }) => (
+const PreviousApprenticesGroup = ({ version, apprentices }) => (
   <section className={styles['previous-apprentices-group']}>
     <p
       className={styles['previous-apprentices-group__version']}
@@ -31,15 +22,15 @@ const PreviousApprenticesGroup = ({ version, statuses }) => (
     >
       {version}
     </p>
-    <ul className={styles['previous-apprentices-group__apprentices']}>
-      {statuses.map(makePreviousApprentice)}
+    <ul className={styles['previous-apprentices-group__statuses']}>
+      {apprentices.map(makePreviousApprentice)}
     </ul>
   </section>
 );
 
 PreviousApprenticesGroup.propTypes = {
   version: PropTypes.string.isRequired,
-  statuses: PropTypes.arrayOf(PropTypes.shape({
+  apprentices: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string,
     status: PropTypes.oneOf(['current', 'previous']),
   })).isRequired,

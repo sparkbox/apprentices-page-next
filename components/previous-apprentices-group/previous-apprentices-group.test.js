@@ -7,7 +7,7 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import PreviousApprenticesGroup from './previous-apprentices-group';
 
-describe('the Apprentice component', () => {
+describe('the PreviousApprenticesGroup component', () => {
   const apprenticeClassSevenApprentices = [
     { name: 'Betty Baker' },
     {
@@ -34,7 +34,7 @@ describe('the Apprentice component', () => {
   it('renders class seven correctly', () => {
     render(<PreviousApprenticesGroup
       version="7.0"
-      statuses={apprenticeClassSevenApprentices}
+      apprentices={apprenticeClassSevenApprentices}
     />);
 
     expect(screen.getByTestId('7.0')).toBeTruthy();
@@ -45,7 +45,7 @@ describe('the Apprentice component', () => {
   it('renders class eight correctly', () => {
     render(<PreviousApprenticesGroup
       version="8.0"
-      statuses={apprenticeClassEightApprentices}
+      apprentices={apprenticeClassEightApprentices}
     />);
 
     expect(screen.getByTestId('8.0')).toBeTruthy();

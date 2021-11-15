@@ -54,11 +54,11 @@ const Components = () => {
       <h2>Previous Apprentices Group</h2>
       <PreviousApprenticesGroup
         version="7.0"
-        statuses={apprenticeClassSevenApprentices}
+        apprentices={apprenticeClassSevenApprentices}
       />
       <PreviousApprenticesGroup
         version="8.0"
-        statuses={apprenticeClassEightApprentices}
+        apprentices={apprenticeClassEightApprentices}
       />
     </main>
   );
