@@ -1,0 +1,105 @@
+@use '../../styles/colors' as *;
+@use '../../styles/spacing' as *;
+@use '../../styles/fonts' as *;
+
+.previous-apprentices {
+  width: $component-width;
+
+  &__header {
+    display: block;
+    max-width: $max-content-width;
+    margin: auto;
+
+    h2,
+    p {
+      display: inline-block;
+    }
+
+    h2 {
+      margin: 0 6rem;
+    }
+  }
+
+  &__legend {
+    padding-top: 0.5rem;
+    margin-right: 2.5rem;
+
+    p {
+      padding-left: 1rem;
+    }
+
+    svg {
+      padding-left: 4rem;
+    }
+  }
+
+  &__groups {
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+    row-gap: 2rem;
+    flex-flow: row wrap;
+    max-width: $max-content-width;
+    margin: auto;
+  }
+}
+
+.employee-status {
+  width: 0.75rem;
+  padding-left: 0.5rem;
+  fill: black;
+}
+
+.past-employee-status {
+  stroke: $c-highlight-green;
+  stroke-width: 0.75rem;
+}
+
+.current-employee-status {
+  stroke: $c-highlight-green;
+  stroke-width: 1rem;
+  fill: $c-highlight-green;
+}
+
+@media (min-width: 50rem) {
+  .previous-apprentices {
+    &__header {
+      margin: auto;
+
+      h2 {
+        margin: 0 4rem;
+      }
+    }
+
+    &__groups {
+      margin: auto;
+    }
+
+    &__legend-item {
+      display: inline-block;
+    }
+  }
+}
+
+@media (min-width: 70rem) {
+  .previous-apprentices {
+    &__header {
+      h2 {
+        margin: revert;
+      }
+    }
+
+    &__groups {
+      margin: 0 auto;
+      justify-content: space-between;
+    }
+
+    &__legend {
+      float: right;
+    }
+
+    &__legend-item {
+      display: inline-block;
+    }
+  }
+}

@@ -5,6 +5,8 @@ import ApprenticeQualities from '../components/apprentice-qualities/apprentice-q
 import Hero from '../components/hero/hero';
 import { currentApprenticeClassPropTypes, CurrentApprentices } from '../components/current-apprentices/current-apprentices';
 import CallToAction from '../components/call-to-action/call-to-action';
+import PreviousApprentices from '../components/previous-apprentices/previous-apprentices';
+import previousApprenticeGroups from '../data/apprentices';
 
 export const getStaticProps = async () => ({
   // Links are not currently official in the currentApprentices data:
@@ -22,7 +24,7 @@ export const getStaticProps = async () => ({
           ],
         },
         {
-          name: 'Alice Russel',
+          name: 'Alice Russell',
           image: '/apprentices/Alice.png',
           links: [
             { href: 'personal', text: 'Personal' },
@@ -46,6 +48,7 @@ const Home = ({ currentApprenticeClass }) => (
       <Hero />
       <ApprenticeQualities />
       <CurrentApprentices currentApprenticeClass={currentApprenticeClass} />
+      <PreviousApprentices previousApprenticeGroups={previousApprenticeGroups} />
       <CallToAction />
     </main>
   </div>

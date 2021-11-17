@@ -1,0 +1,182 @@
+[
+  {
+    "version": "13.0",
+    "apprentices": [
+      {
+        "name": "Rise Erpelding",
+        "status": "current"
+      },
+      {
+        "name": "Flash Gooden",
+        "status": "current"
+      },
+      {
+        "name": "Sheridan McKisick",
+        "status": "current"
+      }
+    ]
+  },
+  {
+    "version": "12.0",
+    "apprentices": [
+      {
+        "name": "Hunter Keca",
+        "status": "current"
+      },
+      {
+        "name": "Luis Hernandez",
+        "status": "current"
+      },
+      {
+        "name": "Susmita Bhowmik"
+      }
+    ]
+  },
+  {
+    "version": "11.0",
+    "apprentices": [
+      {
+        "name": "Merani Cosme",
+        "status": "current"
+      }
+    ]
+  },
+  {
+    "version": "10.0",
+    "apprentices": [
+      {
+        "name": "Colby Allen",
+        "status": "previous"
+      },
+      {
+        "name": "Jhilene Walker"
+      }
+    ]
+  },
+  {
+    "version": "9.0",
+    "apprentices": [
+      {
+        "name": "Dakota Sexton"
+      },
+      {
+        "name": "Melissa Thompson",
+        "status": "previous"
+      }
+    ]
+  },
+  {
+    "version": "8.0",
+    "apprentices": [
+      {
+        "name": "Yosevu Kilonzo",
+        "status": "current"
+      },
+      {
+        "name": "Corinne Ling",
+        "status": "previous"
+      },
+      {
+        "name": "Travis Sanon",
+        "status": "current"
+      }
+    ]
+  },
+  {
+    "version": "7.0",
+    "apprentices": [
+      {
+        "name": "Betty Baker"
+      },
+      {
+        "name": "Heather Taylor",
+        "status": "previous"
+      }
+    ]
+  },
+  {
+    "version": "6.0",
+    "apprentices": [
+      {
+        "name": "Rachel Broering"
+      },
+      {
+        "name": "Andrew Spencer",
+        "status": "previous"
+      }
+    ]
+  },
+  {
+    "version": "5.0",
+    "apprentices": [
+      {
+        "name": "Bennett Chidoro"
+      },
+      {
+        "name": "Nathan Jacobs",
+        "status": "current"
+      },
+      {
+        "name": "Catherine Meade",
+        "status": "current"
+      },
+      {
+        "name": "Brittany Webb"
+      }
+    ]
+  },
+  {
+    "version": "4.0",
+    "apprentices": [
+      {
+        "name": "Kasey Bonifacio",
+        "status": "current"
+      },
+      {
+        "name": "Lauren Dorman"
+      },
+      {
+        "name": "Dan Rosenthal"
+      }
+    ]
+  },
+  {
+    "version": "3.0",
+    "apprentices": [
+      {
+        "name": "Michael Flores"
+      },
+      {
+        "name": "Divya Sasidharan",
+        "status": "previous"
+      }
+    ]
+  },
+  {
+    "version": "2.0",
+    "apprentices": [
+      {
+        "name": "Eddie Bonk"
+      },
+      {
+        "name": "Jacob Flohre"
+      },
+      {
+        "name": "Neil Renicker",
+        "status": "previous"
+      }
+    ]
+  },
+  {
+    "version": "1.0",
+    "apprentices": [
+      {
+        "name": "Linnie Jupe"
+      },
+      {
+        "name": "Ethan Muller",
+        "status": "previous"
+      }
+    ]
+  }
+]

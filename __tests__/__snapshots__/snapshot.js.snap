@@ -258,6 +258,621 @@ exports[`renders homepage unchanged 1`] = `
         />
       </div>
     </section>
+    <article
+      className="previous-apprentices"
+    >
+      <section
+        className="previous-apprentices__header"
+      >
+        <h2>
+          Previous Apprentices
+        </h2>
+        <div
+          className="previous-apprentices__legend"
+        >
+          <div
+            className="previous-apprentices__legend-item"
+          >
+            <svg
+              className="employee-status"
+              viewBox="0 0 100 100"
+            >
+              <polygon
+                className="current-employee-status"
+                points="50 15, 100 100, 0 100"
+              />
+            </svg>
+            <p>
+              Current Employee
+            </p>
+          </div>
+          <div
+            className="previous-apprentices__legend-item"
+          >
+            <svg
+              className="employee-status"
+              viewBox="0 0 100 100"
+            >
+              <polygon
+                className="past-employee-status"
+                points="50 15, 100 100, 0 100"
+              />
+            </svg>
+            <p>
+              Past Employee
+            </p>
+          </div>
+        </div>
+      </section>
+      <div
+        className="previous-apprentices__groups"
+      >
+        <section
+          className="previous-apprentices-group"
+        >
+          <p
+            className="previous-apprentices-group__version"
+            data-testid="13.0"
+          >
+            13.0
+          </p>
+          <ul
+            className="previous-apprentices-group__statuses"
+          >
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Rise Erpelding"
+            >
+              Rise Erpelding
+              <svg
+                className="employee-status"
+                viewBox="0 0 100 100"
+              >
+                <polygon
+                  className="current-employee-status"
+                  data-testid="status-indicator"
+                  points="50 15, 100 100, 0 100"
+                />
+              </svg>
+            </li>
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Flash Gooden"
+            >
+              Flash Gooden
+              <svg
+                className="employee-status"
+                viewBox="0 0 100 100"
+              >
+                <polygon
+                  className="current-employee-status"
+                  data-testid="status-indicator"
+                  points="50 15, 100 100, 0 100"
+                />
+              </svg>
+            </li>
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Sheridan McKisick"
+            >
+              Sheridan McKisick
+              <svg
+                className="employee-status"
+                viewBox="0 0 100 100"
+              >
+                <polygon
+                  className="current-employee-status"
+                  data-testid="status-indicator"
+                  points="50 15, 100 100, 0 100"
+                />
+              </svg>
+            </li>
+          </ul>
+        </section>
+        <section
+          className="previous-apprentices-group"
+        >
+          <p
+            className="previous-apprentices-group__version"
+            data-testid="12.0"
+          >
+            12.0
+          </p>
+          <ul
+            className="previous-apprentices-group__statuses"
+          >
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Hunter Keca"
+            >
+              Hunter Keca
+              <svg
+                className="employee-status"
+                viewBox="0 0 100 100"
+              >
+                <polygon
+                  className="current-employee-status"
+                  data-testid="status-indicator"
+                  points="50 15, 100 100, 0 100"
+                />
+              </svg>
+            </li>
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Luis Hernandez"
+            >
+              Luis Hernandez
+              <svg
+                className="employee-status"
+                viewBox="0 0 100 100"
+              >
+                <polygon
+                  className="current-employee-status"
+                  data-testid="status-indicator"
+                  points="50 15, 100 100, 0 100"
+                />
+              </svg>
+            </li>
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Susmita Bhowmik"
+            >
+              Susmita Bhowmik
+            </li>
+          </ul>
+        </section>
+        <section
+          className="previous-apprentices-group"
+        >
+          <p
+            className="previous-apprentices-group__version"
+            data-testid="11.0"
+          >
+            11.0
+          </p>
+          <ul
+            className="previous-apprentices-group__statuses"
+          >
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Merani Cosme"
+            >
+              Merani Cosme
+              <svg
+                className="employee-status"
+                viewBox="0 0 100 100"
+              >
+                <polygon
+                  className="current-employee-status"
+                  data-testid="status-indicator"
+                  points="50 15, 100 100, 0 100"
+                />
+              </svg>
+            </li>
+          </ul>
+        </section>
+        <section
+          className="previous-apprentices-group"
+        >
+          <p
+            className="previous-apprentices-group__version"
+            data-testid="10.0"
+          >
+            10.0
+          </p>
+          <ul
+            className="previous-apprentices-group__statuses"
+          >
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Colby Allen"
+            >
+              Colby Allen
+              <svg
+                className="employee-status"
+                viewBox="0 0 100 100"
+              >
+                <polygon
+                  className="past-employee-status"
+                  data-testid="status-indicator"
+                  points="50 15, 100 100, 0 100"
+                />
+              </svg>
+            </li>
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Jhilene Walker"
+            >
+              Jhilene Walker
+            </li>
+          </ul>
+        </section>
+        <section
+          className="previous-apprentices-group"
+        >
+          <p
+            className="previous-apprentices-group__version"
+            data-testid="9.0"
+          >
+            9.0
+          </p>
+          <ul
+            className="previous-apprentices-group__statuses"
+          >
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Dakota Sexton"
+            >
+              Dakota Sexton
+            </li>
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Melissa Thompson"
+            >
+              Melissa Thompson
+              <svg
+                className="employee-status"
+                viewBox="0 0 100 100"
+              >
+                <polygon
+                  className="past-employee-status"
+                  data-testid="status-indicator"
+                  points="50 15, 100 100, 0 100"
+                />
+              </svg>
+            </li>
+          </ul>
+        </section>
+        <section
+          className="previous-apprentices-group"
+        >
+          <p
+            className="previous-apprentices-group__version"
+            data-testid="8.0"
+          >
+            8.0
+          </p>
+          <ul
+            className="previous-apprentices-group__statuses"
+          >
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Yosevu Kilonzo"
+            >
+              Yosevu Kilonzo
+              <svg
+                className="employee-status"
+                viewBox="0 0 100 100"
+              >
+                <polygon
+                  className="current-employee-status"
+                  data-testid="status-indicator"
+                  points="50 15, 100 100, 0 100"
+                />
+              </svg>
+            </li>
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Corinne Ling"
+            >
+              Corinne Ling
+              <svg
+                className="employee-status"
+                viewBox="0 0 100 100"
+              >
+                <polygon
+                  className="past-employee-status"
+                  data-testid="status-indicator"
+                  points="50 15, 100 100, 0 100"
+                />
+              </svg>
+            </li>
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Travis Sanon"
+            >
+              Travis Sanon
+              <svg
+                className="employee-status"
+                viewBox="0 0 100 100"
+              >
+                <polygon
+                  className="current-employee-status"
+                  data-testid="status-indicator"
+                  points="50 15, 100 100, 0 100"
+                />
+              </svg>
+            </li>
+          </ul>
+        </section>
+        <section
+          className="previous-apprentices-group"
+        >
+          <p
+            className="previous-apprentices-group__version"
+            data-testid="7.0"
+          >
+            7.0
+          </p>
+          <ul
+            className="previous-apprentices-group__statuses"
+          >
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Betty Baker"
+            >
+              Betty Baker
+            </li>
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Heather Taylor"
+            >
+              Heather Taylor
+              <svg
+                className="employee-status"
+                viewBox="0 0 100 100"
+              >
+                <polygon
+                  className="past-employee-status"
+                  data-testid="status-indicator"
+                  points="50 15, 100 100, 0 100"
+                />
+              </svg>
+            </li>
+          </ul>
+        </section>
+        <section
+          className="previous-apprentices-group"
+        >
+          <p
+            className="previous-apprentices-group__version"
+            data-testid="6.0"
+          >
+            6.0
+          </p>
+          <ul
+            className="previous-apprentices-group__statuses"
+          >
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Rachel Broering"
+            >
+              Rachel Broering
+            </li>
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Andrew Spencer"
+            >
+              Andrew Spencer
+              <svg
+                className="employee-status"
+                viewBox="0 0 100 100"
+              >
+                <polygon
+                  className="past-employee-status"
+                  data-testid="status-indicator"
+                  points="50 15, 100 100, 0 100"
+                />
+              </svg>
+            </li>
+          </ul>
+        </section>
+        <section
+          className="previous-apprentices-group"
+        >
+          <p
+            className="previous-apprentices-group__version"
+            data-testid="5.0"
+          >
+            5.0
+          </p>
+          <ul
+            className="previous-apprentices-group__statuses"
+          >
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Bennett Chidoro"
+            >
+              Bennett Chidoro
+            </li>
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Nathan Jacobs"
+            >
+              Nathan Jacobs
+              <svg
+                className="employee-status"
+                viewBox="0 0 100 100"
+              >
+                <polygon
+                  className="current-employee-status"
+                  data-testid="status-indicator"
+                  points="50 15, 100 100, 0 100"
+                />
+              </svg>
+            </li>
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Catherine Meade"
+            >
+              Catherine Meade
+              <svg
+                className="employee-status"
+                viewBox="0 0 100 100"
+              >
+                <polygon
+                  className="current-employee-status"
+                  data-testid="status-indicator"
+                  points="50 15, 100 100, 0 100"
+                />
+              </svg>
+            </li>
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Brittany Webb"
+            >
+              Brittany Webb
+            </li>
+          </ul>
+        </section>
+        <section
+          className="previous-apprentices-group"
+        >
+          <p
+            className="previous-apprentices-group__version"
+            data-testid="4.0"
+          >
+            4.0
+          </p>
+          <ul
+            className="previous-apprentices-group__statuses"
+          >
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Kasey Bonifacio"
+            >
+              Kasey Bonifacio
+              <svg
+                className="employee-status"
+                viewBox="0 0 100 100"
+              >
+                <polygon
+                  className="current-employee-status"
+                  data-testid="status-indicator"
+                  points="50 15, 100 100, 0 100"
+                />
+              </svg>
+            </li>
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Lauren Dorman"
+            >
+              Lauren Dorman
+            </li>
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Dan Rosenthal"
+            >
+              Dan Rosenthal
+            </li>
+          </ul>
+        </section>
+        <section
+          className="previous-apprentices-group"
+        >
+          <p
+            className="previous-apprentices-group__version"
+            data-testid="3.0"
+          >
+            3.0
+          </p>
+          <ul
+            className="previous-apprentices-group__statuses"
+          >
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Michael Flores"
+            >
+              Michael Flores
+            </li>
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Divya Sasidharan"
+            >
+              Divya Sasidharan
+              <svg
+                className="employee-status"
+                viewBox="0 0 100 100"
+              >
+                <polygon
+                  className="past-employee-status"
+                  data-testid="status-indicator"
+                  points="50 15, 100 100, 0 100"
+                />
+              </svg>
+            </li>
+          </ul>
+        </section>
+        <section
+          className="previous-apprentices-group"
+        >
+          <p
+            className="previous-apprentices-group__version"
+            data-testid="2.0"
+          >
+            2.0
+          </p>
+          <ul
+            className="previous-apprentices-group__statuses"
+          >
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Eddie Bonk"
+            >
+              Eddie Bonk
+            </li>
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Jacob Flohre"
+            >
+              Jacob Flohre
+            </li>
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Neil Renicker"
+            >
+              Neil Renicker
+              <svg
+                className="employee-status"
+                viewBox="0 0 100 100"
+              >
+                <polygon
+                  className="past-employee-status"
+                  data-testid="status-indicator"
+                  points="50 15, 100 100, 0 100"
+                />
+              </svg>
+            </li>
+          </ul>
+        </section>
+        <section
+          className="previous-apprentices-group"
+        >
+          <p
+            className="previous-apprentices-group__version"
+            data-testid="1.0"
+          >
+            1.0
+          </p>
+          <ul
+            className="previous-apprentices-group__statuses"
+          >
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Linnie Jupe"
+            >
+              Linnie Jupe
+            </li>
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="Ethan Muller"
+            >
+              Ethan Muller
+              <svg
+                className="employee-status"
+                viewBox="0 0 100 100"
+              >
+                <polygon
+                  className="past-employee-status"
+                  data-testid="status-indicator"
+                  points="50 15, 100 100, 0 100"
+                />
+              </svg>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </article>
     <footer
       className="call-to-action"
     >

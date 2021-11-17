@@ -3,6 +3,8 @@
 @use '../../styles/fonts' as *;
 
 .previous-apprentices-group {
+  flex-basis: 40%;
+
   &__version {
     color: $c-highlight-pink;
     padding-bottom: 0.5rem;
@@ -17,5 +19,11 @@
     &:not(&:last-child) {
       padding-bottom: 0.5rem;
     }
+  }
+}
+
+@media (min-width: 45rem) {
+  .previous-apprentices-group {
+    flex-basis: 20%;
   }
 }
