@@ -1,23 +1,25 @@
-# Next.js + Jest
+# Sparkbox Apprentice Page
 
-This example shows how to configure Jest to work with Next.js.
+## Getting Started
 
-This includes Next.js' built-in support for Global CSS, CSS Modules, and TypeScript!
+- run the following in your terminal: ```git clone https://github.com/sparkbox/apprentices-page-next.git``` 
 
-## How to Use
+##### Installing Deps:
 
-Quickly get started using [Create Next App](https://github.com/vercel/next.js/tree/canary/packages/create-next-app#readme)!
+- ```npm install```
 
-In your terminal, run the following command:
+##### Running the Project:
 
-```bash
-npx create-next-app --example with-jest with-jest-app
-# or
-yarn create next-app --example with-jest with-jest-app
-```
+- ```npm run dev```
 
-## Run Jest Tests
+##### Running the linter:
 
-```bash
-npm test
-```
+- ```npm run lint```
+
+##### Running Tests with watch mode:
+
+- ```npm test```
+
+##### Runnnig tests without watch mode:
+
+- ```npm test:ci``` 
