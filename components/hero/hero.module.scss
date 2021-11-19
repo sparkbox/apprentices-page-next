@@ -83,27 +83,31 @@
 
       img {
         max-width: 100%;
-        margin-top: -5px;
 
         // Images below are placed in the grid in order from top to bottom and left to right
         &:nth-child(1) {
           grid-area: 2 / 18 / 7 / 41;
+          background-color: $c-highlight-blue;
         }
 
         &:nth-child(2) {
           grid-area: 7 / 7 / 11 / 18;
+          background-color: $c-highlight-green;
         }
 
         &:nth-child(3) {
           grid-area: 7 / 41 / 12 / 64;
+          background-color: $c-highlight-green;
         }
 
         &:nth-child(4) {
           grid-area: 12 / 18 / 17 / 41;
+          background-color: $c-highlight-pink;
         }
 
         &:nth-child(5) {
           grid-area: 17 / 41 / 20 / 51;
+          background-color: $c-highlight-blue;
         }
         // In mobile and tablet view only 3 images are shown
         &:nth-child(n + 4) {

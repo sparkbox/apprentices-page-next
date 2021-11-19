@@ -86,22 +86,27 @@
         // Images below are placed in the grid in order from top to bottom and left to right
         &:nth-child(1) {
           grid-area: 2 / 1 / 6 / 22;
+          background-color: $c-highlight-pink;
         }
 
         &:nth-child(2) {
           grid-area: 6 / 22 / 14 / 44;
+          background-color: $c-highlight-blue;
         }
 
         &:nth-child(3) {
           grid-area: 4 / 44 / 8 / 55;
+          background-color: $c-highlight-pink;
         }
 
         &:nth-child(4) {
           grid-area: 10 / 11 / 17 / 22;
+          background-color: $c-highlight-green;
         }
 
         &:nth-child(5) {
           grid-area: 10 / 44 / 20 / 66;
+          background-color: $c-highlight-green;
         }
         // In mobile and tablet view only 3 images are shown
         &:nth-child(n + 4) {
