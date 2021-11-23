@@ -10,6 +10,7 @@
     "start": "next start",
     "test": "jest --watch",
     "test:ci": "jest --ci",
+    "test:snapshot:update": "jest --ci -u",
     "lint:css": "npx stylelint \"**/*.scss\" \"**/*.css\"",
     "lint:js": "next lint"
   },
