@@ -1,43 +1,24 @@
 import React from 'react';
 import Head from 'next/head';
+import PropTypes from 'prop-types';
 import styles from './index.module.scss';
-import ApprenticeQualities from '../components/apprentice-qualities/apprentice-qualities';
+import apprenticeData from '../data/apprentices';
 import Hero from '../components/hero/hero';
-import { currentApprenticeClassPropTypes, CurrentApprentices } from '../components/current-apprentices/current-apprentices';
+import ApprenticeQualities from '../components/apprentice-qualities/apprentice-qualities';
+import CurrentApprentices, { currentApprenticeClassPropTypes } from '../components/current-apprentices/current-apprentices';
+import PreviousApprentices, { previousApprenticeGroupsPropTypes } from '../components/previous-apprentices/previous-apprentices';
 import CallToAction from '../components/call-to-action/call-to-action';
-import PreviousApprentices from '../components/previous-apprentices/previous-apprentices';
-import previousApprenticeGroups from '../data/apprentices';
 
 export const getStaticProps = async () => ({
-  // Links are not currently official in the currentApprentices data:
   props: {
-    currentApprenticeClass: {
-      version: '14.0',
-      currentApprentices: [
-        {
-          name: 'Angus Chang',
-          image: '/apprentices/Angus.png',
-          links: [
-            { href: 'personal', text: 'Personal' },
-            { href: 'https://www.linkedin.com/', text: 'Linkedin' },
-            { href: 'https://www.github.com/', text: 'Github' },
-          ],
-        },
-        {
-          name: 'Alice Russell',
-          image: '/apprentices/Alice.png',
-          links: [
-            { href: 'personal', text: 'Personal' },
-            { href: 'https://www.linkedin.com/', text: 'Linkedin' },
-            { href: 'https://www.github.com/', text: 'Github' },
-          ],
-        },
-      ],
+    apprenticeData: {
+      currentApprenticeGroup: apprenticeData.currentApprenticeGroup,
+      previousApprenticeGroups: apprenticeData.previousApprenticeGroups,
     },
   },
 });
 
-const Home = ({ currentApprenticeClass }) => (
+const Home = ({ apprenticeData: { currentApprenticeGroup, previousApprenticeGroups } }) => (
   <div className={styles.container}>
     <Head>
       <title>Sparkbox Apprentices</title>
@@ -47,7 +28,7 @@ const Home = ({ currentApprenticeClass }) => (
     <main>
       <Hero />
       <ApprenticeQualities />
-      <CurrentApprentices currentApprenticeClass={currentApprenticeClass} />
+      <CurrentApprentices currentApprenticeClass={currentApprenticeGroup} />
       <PreviousApprentices previousApprenticeGroups={previousApprenticeGroups} />
       <CallToAction />
     </main>
@@ -55,13 +36,19 @@ const Home = ({ currentApprenticeClass }) => (
 );
 
 Home.propTypes = {
-  currentApprenticeClass: currentApprenticeClassPropTypes,
+  apprenticeData: PropTypes.shape({
+    currentApprenticeGroup: PropTypes.shape({ currentApprenticeClassPropTypes }).isRequired,
+    previousApprenticeGroups: PropTypes.arrayOf(previousApprenticeGroupsPropTypes).isRequired,
+  }),
 };
 
 Home.defaultProps = {
-  currentApprenticeClass: {
-    version: '',
-    currentApprentices: [],
+  apprenticeData: {
+    currentApprenticeGroup: {
+      version: '',
+      currentApprentices: [],
+    },
+    previousApprenticeGroups: [],
   },
 };
 

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './current-apprentices.module.scss';
 import Apprentice, { apprenticePropTypes } from '../apprentice/apprentice';
 
-export const CurrentApprentices = ({ currentApprenticeClass: { currentApprentices, version } }) => (
+const CurrentApprentices = ({ currentApprenticeClass: { currentApprentices, version } }) => (
   <section className={styles['current-apprentices']}>
     <div className={styles['current-apprentices__content']}>
       <div className={styles['current-apprentices__header']}>
@@ -50,3 +50,5 @@ CurrentApprentices.defaultProps = {
     currentApprentices: [],
   },
 };
+
+export default CurrentApprentices;

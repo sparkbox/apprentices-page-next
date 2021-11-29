@@ -5,7 +5,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { CurrentApprentices } from './current-apprentices.js';
+import CurrentApprentices from './current-apprentices.js';
 
 describe('the CurrentApprentices component', () => {
   let renderedImages;

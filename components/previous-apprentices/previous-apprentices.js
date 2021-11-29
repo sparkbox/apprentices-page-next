@@ -43,14 +43,16 @@ const PreviousApprentices = ({ previousApprenticeGroups }) => (
   </article>
 );
 
-PreviousApprentices.propTypes = {
-  previousApprenticeGroups: PropTypes.arrayOf(PropTypes.shape({
-    version: PropTypes.string.isRequired,
-    apprentices: PropTypes.arrayOf(PropTypes.shape({
-      name: PropTypes.string,
-      status: PropTypes.oneOf(['current', 'previous']),
-    })).isRequired,
+export const previousApprenticeGroupsPropTypes = PropTypes.shape({
+  version: PropTypes.string.isRequired,
+  apprentices: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string,
+    status: PropTypes.oneOf(['current', 'previous']),
   })).isRequired,
+}).isRequired;
+
+PreviousApprentices.propTypes = {
+  previousApprenticeGroups: PropTypes.arrayOf(previousApprenticeGroupsPropTypes).isRequired,
 };
 
 export default PreviousApprentices;
