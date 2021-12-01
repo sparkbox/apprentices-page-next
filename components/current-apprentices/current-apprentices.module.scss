@@ -1,8 +1,11 @@
 @use '../../styles/colors' as *;
 @use '../../styles/spacing' as *;
 @use '../../styles/fonts';
+@use '../../styles/mixins' as *;
 
 .current-apprentices {
+  @include section-padding();
+  box-sizing: border-box;
   width: $component-width;
   display: flex;
   flex-direction: column;
@@ -11,13 +14,10 @@
   &__content {
     width: 100%;
     max-width: $max-content-width;
-    box-sizing: border-box;
-    padding: 1rem;
   }
 
   &__header {
     text-align: center;
-    padding: 1rem;
 
     h2 {
       font-size: 2rem;
@@ -36,11 +36,13 @@
     align-items: center;
 
     &__card {
+      margin-bottom: 2rem;
+
       img {
         display: none;
       }
+
       width: 18rem;
-      padding: 1rem;
     }
 
     @supports (display: grid) {
@@ -52,11 +54,7 @@
     }
   }
 
-  @media (min-width: 45rem) {
-    &__content {
-      padding: 5rem 2rem;
-    }
-
+  @media (min-width: 47.9rem) {
     &__header {
       text-align: left;
     }
@@ -65,12 +63,10 @@
       flex-direction: row;
       justify-content: flex-start;
       flex-wrap: wrap;
-    }
-  }
 
-  @media (min-width: 70rem) {
-    &__content {
-      padding: 4rem 0;
+      &__card {
+        margin-right: 2rem;
+      }
     }
   }
 }

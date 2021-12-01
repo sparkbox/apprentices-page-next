@@ -1,0 +1,32 @@
+@mixin section-padding {
+  padding: 9%;
+
+  @media (min-width: 768px) {
+    padding: 3.75rem;
+  }
+
+  @media (min-width: 992px) {
+    padding: 6rem;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 8rem;
+  }
+}
+
+@mixin visually-hidden {
+  position: fixed;
+  right: 100%;
+  bottom: 100%;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+
+  &:focus {
+    left: 0;
+    right: auto;
+    top: 0;
+    bottom: auto;
+    clip: auto;
+    clip-path: none;
+  }
+}

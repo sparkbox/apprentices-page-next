@@ -16,6 +16,8 @@
   }
 
   &__apprentice {
+    width: 10rem;
+
     &:not(&:last-child) {
       padding-bottom: 0.5rem;
     }
@@ -24,6 +26,6 @@
 
 @media (min-width: 45rem) {
   .previous-apprentices-group {
-    flex-basis: 20%;
+    flex-basis: 17%;
   }
 }

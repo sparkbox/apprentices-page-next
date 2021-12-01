@@ -1,11 +1,14 @@
 @use '../../styles/colors' as *;
 @use '../../styles/spacing' as *;
 @use '../../styles/fonts' as *;
+@use '../../styles/mixins' as *;
 
 .previous-apprentices {
-  padding-top: 30rem;
+  padding: 30rem 9% 9% 9%;
   margin-top: -30rem;
+  z-index: -100;
 
+  box-sizing: border-box;
   width: $component-width;
 
   &__header {
@@ -20,22 +23,20 @@
   }
 
   &__legend {
-    padding-top: 0.5rem;
-
     p {
-      padding-left: 1rem;
+      margin: 0.75rem 2rem 0.5rem 0;
+      margin-right: 2rem;
     }
 
-    svg {
-      padding-left: 4rem;
+    svg:nth-child(1) {
+      margin-right: 0.5rem;
     }
   }
 
   &__groups {
-    width: $max-content-width;
     display: flex;
-    justify-content: center;
-    column-gap: 1rem;
+    justify-content: flex-start;
+    column-gap: 5rem;
     row-gap: 2rem;
     flex-flow: row wrap;
     max-width: $max-content-width;
@@ -45,7 +46,6 @@
 
 .employee-status {
   width: 0.75rem;
-  padding-left: 0.5rem;
   fill: black;
 }
 
@@ -67,14 +67,6 @@
     background-size: 40rem;
     background-position-x: calc(50% + 38rem);
     background-position-y: 16rem;
-
-    &__header {
-      margin: auto;
-
-      h2 {
-        margin: 0 4rem;
-      }
-    }
 
     &__groups {
       margin: auto;
@@ -100,6 +92,7 @@
     }
 
     &__legend {
+      padding-top: 1rem;
       float: right;
     }
 
