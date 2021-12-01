@@ -3,10 +3,6 @@
 @use '../../styles/fonts' as *;
 
 .previous-apprentices {
-  background: url('../../public/sparkbox-logo.svg') no-repeat;
-  background-size: 40rem;
-  background-position: 68rem;
-
   padding-top: 30rem;
   margin-top: -30rem;
 
@@ -70,6 +66,12 @@
 
 @media (min-width: 50rem) {
   .previous-apprentices {
+
+    background: url('../../public/sparkbox-logo.svg') no-repeat;
+    background-size: 40rem;
+    background-position-x: calc(50% + 38rem);
+    background-position-y: 16rem;
+
     &__header {
       margin: auto;
 
