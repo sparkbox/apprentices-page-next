@@ -249,13 +249,202 @@ exports[`renders homepage unchanged 1`] = `
             >
                
               v
-              
+              0.0
             </span>
           </h2>
         </div>
         <div
           className="card-container"
-        />
+        >
+          <div
+            className="card-container__card"
+          >
+            <article
+              className="container"
+            >
+              <h2
+                className="container__heading"
+              >
+                First Last
+              </h2>
+              <img
+                alt="First Last"
+                className="container__image"
+                src="/apprentices/First.png"
+              />
+              <div
+                className="container__links"
+              >
+                <div
+                  className="container"
+                >
+                  <a
+                    className="link"
+                    href="personal"
+                  >
+                    Personal
+                  </a>
+                  <svg
+                    fill="none"
+                    height="9"
+                    viewBox="0 0 11 9"
+                    width="11"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      clipRule="evenodd"
+                      d="M0.5 3.07343L0.5 8.5L1.26923 8.5L1.26923 3.07343L8.31903 3.07343C7.95887 3.47125 7.57203 4.06799 7.15851 4.86364L7.85883 4.86364C8.6992 3.94367 9.57959 3.27234 10.5 2.84965L10.5 2.51399C9.57959 2.07887 8.6992 1.40754 7.85883 0.500001L7.15852 0.500001C7.57203 1.29565 7.95887 1.89239 8.31903 2.29021L0.5 2.29021L0.5 2.68182L0.5 3.07343Z"
+                      fill="white"
+                      fillRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="container"
+                >
+                  <a
+                    className="link"
+                    href="https://www.linkedin.com/"
+                  >
+                    Linkedin
+                  </a>
+                  <svg
+                    fill="none"
+                    height="9"
+                    viewBox="0 0 11 9"
+                    width="11"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      clipRule="evenodd"
+                      d="M0.5 3.07343L0.5 8.5L1.26923 8.5L1.26923 3.07343L8.31903 3.07343C7.95887 3.47125 7.57203 4.06799 7.15851 4.86364L7.85883 4.86364C8.6992 3.94367 9.57959 3.27234 10.5 2.84965L10.5 2.51399C9.57959 2.07887 8.6992 1.40754 7.85883 0.500001L7.15852 0.500001C7.57203 1.29565 7.95887 1.89239 8.31903 2.29021L0.5 2.29021L0.5 2.68182L0.5 3.07343Z"
+                      fill="white"
+                      fillRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="container"
+                >
+                  <a
+                    className="link"
+                    href="https://www.github.com/"
+                  >
+                    Github
+                  </a>
+                  <svg
+                    fill="none"
+                    height="9"
+                    viewBox="0 0 11 9"
+                    width="11"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      clipRule="evenodd"
+                      d="M0.5 3.07343L0.5 8.5L1.26923 8.5L1.26923 3.07343L8.31903 3.07343C7.95887 3.47125 7.57203 4.06799 7.15851 4.86364L7.85883 4.86364C8.6992 3.94367 9.57959 3.27234 10.5 2.84965L10.5 2.51399C9.57959 2.07887 8.6992 1.40754 7.85883 0.500001L7.15852 0.500001C7.57203 1.29565 7.95887 1.89239 8.31903 2.29021L0.5 2.29021L0.5 2.68182L0.5 3.07343Z"
+                      fill="white"
+                      fillRule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div
+            className="card-container__card"
+          >
+            <article
+              className="container"
+            >
+              <h2
+                className="container__heading"
+              >
+                First Last
+              </h2>
+              <img
+                alt="First Last"
+                className="container__image"
+                src="/apprentices/First.png"
+              />
+              <div
+                className="container__links"
+              >
+                <div
+                  className="container"
+                >
+                  <a
+                    className="link"
+                    href="personal"
+                  >
+                    Personal
+                  </a>
+                  <svg
+                    fill="none"
+                    height="9"
+                    viewBox="0 0 11 9"
+                    width="11"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      clipRule="evenodd"
+                      d="M0.5 3.07343L0.5 8.5L1.26923 8.5L1.26923 3.07343L8.31903 3.07343C7.95887 3.47125 7.57203 4.06799 7.15851 4.86364L7.85883 4.86364C8.6992 3.94367 9.57959 3.27234 10.5 2.84965L10.5 2.51399C9.57959 2.07887 8.6992 1.40754 7.85883 0.500001L7.15852 0.500001C7.57203 1.29565 7.95887 1.89239 8.31903 2.29021L0.5 2.29021L0.5 2.68182L0.5 3.07343Z"
+                      fill="white"
+                      fillRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="container"
+                >
+                  <a
+                    className="link"
+                    href="https://www.linkedin.com/"
+                  >
+                    Linkedin
+                  </a>
+                  <svg
+                    fill="none"
+                    height="9"
+                    viewBox="0 0 11 9"
+                    width="11"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      clipRule="evenodd"
+                      d="M0.5 3.07343L0.5 8.5L1.26923 8.5L1.26923 3.07343L8.31903 3.07343C7.95887 3.47125 7.57203 4.06799 7.15851 4.86364L7.85883 4.86364C8.6992 3.94367 9.57959 3.27234 10.5 2.84965L10.5 2.51399C9.57959 2.07887 8.6992 1.40754 7.85883 0.500001L7.15852 0.500001C7.57203 1.29565 7.95887 1.89239 8.31903 2.29021L0.5 2.29021L0.5 2.68182L0.5 3.07343Z"
+                      fill="white"
+                      fillRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div
+                  className="container"
+                >
+                  <a
+                    className="link"
+                    href="https://www.github.com/"
+                  >
+                    Github
+                  </a>
+                  <svg
+                    fill="none"
+                    height="9"
+                    viewBox="0 0 11 9"
+                    width="11"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      clipRule="evenodd"
+                      d="M0.5 3.07343L0.5 8.5L1.26923 8.5L1.26923 3.07343L8.31903 3.07343C7.95887 3.47125 7.57203 4.06799 7.15851 4.86364L7.85883 4.86364C8.6992 3.94367 9.57959 3.27234 10.5 2.84965L10.5 2.51399C9.57959 2.07887 8.6992 1.40754 7.85883 0.500001L7.15852 0.500001C7.57203 1.29565 7.95887 1.89239 8.31903 2.29021L0.5 2.29021L0.5 2.68182L0.5 3.07343Z"
+                      fill="white"
+                      fillRule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
     <article
@@ -306,7 +495,60 @@ exports[`renders homepage unchanged 1`] = `
       </section>
       <div
         className="previous-apprentices__groups"
-      />
+      >
+        <section
+          className="previous-apprentices-group"
+        >
+          <p
+            className="previous-apprentices-group__version"
+            data-testid="0.0"
+          >
+            0.0
+          </p>
+          <ul
+            className="previous-apprentices-group__statuses"
+          >
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="First Last"
+            >
+              First Last
+            </li>
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="First Last"
+            >
+              First Last
+              <svg
+                className="employee-status"
+                viewBox="0 0 100 100"
+              >
+                <polygon
+                  className="past-employee-status"
+                  data-testid="status-indicator"
+                  points="50 15, 100 100, 0 100"
+                />
+              </svg>
+            </li>
+            <li
+              className="previous-apprentices-group__apprentice"
+              data-testid="First Last"
+            >
+              First Last
+              <svg
+                className="employee-status"
+                viewBox="0 0 100 100"
+              >
+                <polygon
+                  className="current-employee-status"
+                  data-testid="status-indicator"
+                  points="50 15, 100 100, 0 100"
+                />
+              </svg>
+            </li>
+          </ul>
+        </section>
+      </div>
     </article>
     <footer
       className="call-to-action"
