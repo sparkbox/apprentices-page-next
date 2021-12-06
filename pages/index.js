@@ -24,9 +24,8 @@ const Home = ({ apprenticeData: { currentApprenticeGroup, previousApprenticeGrou
       <title>Sparkbox Apprentices</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-
+    <Hero />
     <main>
-      <Hero />
       <ApprenticeQualities />
       <CurrentApprentices currentApprenticeClass={currentApprenticeGroup} />
       <PreviousApprentices previousApprenticeGroups={previousApprenticeGroups} />

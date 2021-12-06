@@ -1,6 +1,11 @@
 @use '../../styles/colors' as *;
 @use '../../styles/spacing' as *;
 @use '../../styles/fonts' as *;
+@use '../../styles/mixins' as *;
+
+.status-label {
+  @include visually-hidden();
+}
 
 .employee-status {
   width: 0.75rem;

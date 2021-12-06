@@ -8,7 +8,7 @@ it('renders homepage unchanged', () => {
       version: '0.0',
       currentApprentices: [
         {
-          name: 'First Last',
+          name: 'First Last1',
           image: '/apprentices/First.png',
           links: [
             { href: 'personal', text: 'Personal' },
@@ -17,7 +17,7 @@ it('renders homepage unchanged', () => {
           ],
         },
         {
-          name: 'First Last',
+          name: 'First Last2',
           image: '/apprentices/First.png',
           links: [
             { href: 'personal', text: 'Personal' },
@@ -31,14 +31,14 @@ it('renders homepage unchanged', () => {
       version: '0.0',
       apprentices: [
         {
-          name: 'First Last',
+          name: 'First Last1',
         },
         {
-          name: 'First Last',
+          name: 'First Last2',
           status: 'previous',
         },
         {
-          name: 'First Last',
+          name: 'First Last3',
           status: 'current',
         },
       ],

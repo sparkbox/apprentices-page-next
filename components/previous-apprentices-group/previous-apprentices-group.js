@@ -16,12 +16,13 @@ const makePreviousApprentice = (apprentice) => (
 
 const PreviousApprenticesGroup = ({ version, apprentices }) => (
   <section className={styles['previous-apprentices-group']}>
-    <p
+    <h3
       className={styles['previous-apprentices-group__version']}
+      aria-label={`Previous apprentices group version ${version}`}
       data-testid={version}
     >
       {version}
-    </p>
+    </h3>
     <ul className={styles['previous-apprentices-group__statuses']}>
       {apprentices.map(makePreviousApprentice)}
     </ul>

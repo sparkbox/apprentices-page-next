@@ -65,7 +65,7 @@
 
     &__grid {  // This grid is for the hero images and svgs
       display: grid;
-      grid-template-columns: repeat(65, 1fr);
+      grid-template-columns: repeat(63, 1fr);
       grid-template-rows: repeat(11, 1fr);
 
       img {
@@ -212,7 +212,6 @@
 
     &__sparkbox-logo {
       &--full {
-        padding: 1rem;
         margin-bottom: 0;
       }
     }
@@ -224,7 +223,6 @@
     &__text {
       width: 100%;
       order: 0;
-      padding: 1rem;
       margin-top: 2rem;
 
       h1 {

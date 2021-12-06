@@ -34,7 +34,7 @@ describe('the Apprentice component', () => {
   });
 
   it('adds name prop as alt attribute to image', () => {
-    expect(image).toHaveAttribute('alt', 'First Last');
+    expect(image).toHaveAttribute('alt', 'a portrait of First Last');
   });
 
   it('renders links props given an href and text in the correct order', () => {

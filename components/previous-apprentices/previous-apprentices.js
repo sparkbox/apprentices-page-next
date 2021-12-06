@@ -4,8 +4,8 @@ import styles from './previous-apprentices.module.scss';
 import PreviousApprenticesGroup from '../previous-apprentices-group/previous-apprentices-group';
 
 const PreviousApprentices = ({ previousApprenticeGroups }) => (
-  <article className={styles['previous-apprentices']}>
-    <section className={styles['previous-apprentices__header']}>
+  <section className={styles['previous-apprentices']}>
+    <div className={styles['previous-apprentices__header']}>
       <h2>Previous Apprentices</h2>
       <div className={styles['previous-apprentices__legend']}>
         <div className={styles['previous-apprentices__legend-item']}>
@@ -27,7 +27,7 @@ const PreviousApprentices = ({ previousApprenticeGroups }) => (
           <p>Past Employee</p>
         </div>
       </div>
-    </section>
+    </div>
     <div className={styles['previous-apprentices__groups']}>
       {
         previousApprenticeGroups.map(({ version, apprentices }) => (
@@ -40,7 +40,7 @@ const PreviousApprentices = ({ previousApprenticeGroups }) => (
         ))
       }
     </div>
-  </article>
+  </section>
 );
 
 export const previousApprenticeGroupsPropTypes = PropTypes.shape({

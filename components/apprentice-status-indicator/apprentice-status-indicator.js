@@ -15,13 +15,18 @@ const ApprenticeStatusIndicator = ({ status }) => {
   }
 
   return (
-    <svg viewBox="0 0 100 100" className={styles['employee-status']}>
-      <polygon
-        points="50 15, 100 100, 0 100"
-        className={styles[svgClass]}
-        data-testid="status-indicator"
-      />
-    </svg>
+    <>
+      <span className={styles['status-label']}>
+        { `${status} employee` }
+      </span>
+      <svg viewBox="0 0 100 100" className={styles['employee-status']} aria-hidden>
+        <polygon
+          points="50 15, 100 100, 0 100"
+          className={styles[svgClass]}
+          data-testid="status-indicator"
+        />
+      </svg>
+    </>
   );
 };
 
