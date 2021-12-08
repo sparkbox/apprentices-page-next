@@ -20,7 +20,8 @@
   }
 
   &__container {
-    @include section-padding();
+    @include horizontal-section-spacing();
+    @include vertical-section-spacing();
     max-width: $max-content-width;
     display: flex;
     flex-direction: column;
@@ -173,7 +174,6 @@
 
       &--full {
         display: block;
-        padding: 1rem;
         margin-bottom: -10rem;
       }
     }
@@ -211,6 +211,7 @@
 
     &__sparkbox-logo {
       &--full {
+        padding: 1rem;
         margin-bottom: 0;
       }
     }

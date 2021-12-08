@@ -4,9 +4,9 @@
 @use '../../styles/mixins' as *;
 
 .current-apprentices {
-  @include section-padding();
+  @include horizontal-section-spacing();
+  @include vertical-section-spacing();
   box-sizing: border-box;
-  width: $component-width;
   display: flex;
   flex-direction: column;
   align-items: center;

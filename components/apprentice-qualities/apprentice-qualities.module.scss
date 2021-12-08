@@ -1,11 +1,13 @@
 @use '../../styles/colors' as *;
 @use '../../styles/spacing' as *;
+@use '../../styles/mixins' as *;
 
 .primary {
   color: $c-highlight-green;
 }
 
 .apprentice-qualities {
+  @include vertical-section-spacing();
   width: $component-width;
 
   &__main {

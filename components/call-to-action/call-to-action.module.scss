@@ -3,8 +3,8 @@
 @use '../../styles/mixins' as *;
 
 .call-to-action {
-  @include section-padding();
-  width: $component-width;
+  @include horizontal-section-spacing();
+  @include vertical-section-spacing();
   display: flex;
   align-items: center;
   flex-direction: column;
