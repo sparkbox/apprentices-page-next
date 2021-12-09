@@ -7,7 +7,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(80.02% 20.01% at 91.08% 0%, #0F2226  0%, #0A0A0A 100%);
 
   &__header-label {
     @include visually-hidden();

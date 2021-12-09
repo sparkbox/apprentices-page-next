@@ -9,7 +9,6 @@
   align-items: center;
   flex-direction: column;
   box-sizing: border-box;
-  background: radial-gradient(110% 110% at 15.71% 0%, $background-color  85%, #0b1618 100%);
 
 
   &__container {
@@ -58,21 +57,6 @@
 
   &__grid {
     display: none;
-  }
-
-  &__footer {
-    width: 100%;
-    max-width: $max-content-width;
-    font-size: 0.75rem;
-    margin-top: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    order: 2;
-
-    p {
-      width: 70%;
-    }
   }
 
   @supports (display:grid) {
@@ -227,14 +211,4 @@
       }
     }
   }
-}
-
-.sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
 }

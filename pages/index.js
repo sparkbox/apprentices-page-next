@@ -8,6 +8,7 @@ import ApprenticeQualities from '../components/apprentice-qualities/apprentice-q
 import CurrentApprentices, { currentApprenticeClassPropTypes } from '../components/current-apprentices/current-apprentices';
 import PreviousApprentices, { previousApprenticeGroupsPropTypes } from '../components/previous-apprentices/previous-apprentices';
 import CallToAction from '../components/call-to-action/call-to-action';
+import Footer from '../components/footer/footer';
 
 export const getStaticProps = async () => ({
   props: {
@@ -31,6 +32,8 @@ const Home = ({ apprenticeData: { currentApprenticeGroup, previousApprenticeGrou
       <PreviousApprentices previousApprenticeGroups={previousApprenticeGroups} />
       <CallToAction />
     </main>
+
+    <Footer />
   </div>
 );
 

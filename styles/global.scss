@@ -24,7 +24,8 @@ html {
 }
 
 body {
-  @include smooth-font();
+  @include smooth-font;
+  background: radial-gradient(190% 130% at 6% 0%, transparent  75%, $gradient-color 100%), radial-gradient(30% 10% at 97% 0%, $gradient-color  0%, transparent 100%);
 }
 
 main {

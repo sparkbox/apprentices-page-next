@@ -1,0 +1,35 @@
+@use '../../styles/colors' as *;
+@use '../../styles/spacing' as *;
+@use '../../styles/mixins' as *;
+
+.footer {
+  width: $component-width;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    @include horizontal-section-spacing();
+    @include vertical-section-spacing();
+    padding-bottom: 2rem;
+    max-width: $max-content-width;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      width: 70%;
+    }
+  }
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
