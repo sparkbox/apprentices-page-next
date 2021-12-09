@@ -8,6 +8,7 @@
 
 .apprentice-qualities {
   @include vertical-section-spacing();
+  @include horizontal-section-spacing();
   width: $component-width;
 
   &__main {
@@ -47,7 +48,7 @@
   }
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 48rem) {
   .apprentice-qualities {
     min-height: 50rem;
     position: relative;
@@ -60,9 +61,9 @@
     background-repeat: repeat-x;
     background-size: 20rem;
     background-position:
-      -8rem 0,
-      2rem 17.4rem,
-      -8rem 34.7rem;
+      $medium-screen-padding+12rem 0,
+      $medium-screen-padding+2rem  17.4rem,
+      $medium-screen-padding+12rem 34.7rem;
 
     &__main {
       display: flex;
@@ -70,30 +71,45 @@
     }
 
     &__image {
+      order: 1;
       display: block;
       position: absolute;
-      left: 1.2rem;
-      top: 14.4rem;
       pointer-events: none;
       width: 21.5rem;
+      top: 6.5rem;
+      left: -23.75rem;
     }
 
     &__article {
-      padding: 2rem;
+      display: flex;
+      flex-direction: column;
       position: absolute;
-      left: 23rem;
+      left: 25rem;
       top: 8rem;
       padding-top: 3rem;
+      padding-right: 1rem;
+
+      &--heading {
+        order: 2;
+      }
+
+      &--subheading {
+        order: 3;
+      }
+
+      &-text {
+        order: 4;
+      }
     }
   }
 }
 
-@media (min-width: 70.25rem) {
+@media (min-width: 62rem) {
   .apprentice-qualities {
     background-position:
-      calc(50% - 16rem) 0,
-      calc(50% - 6rem) 17.3rem,
-      calc(50% - 16rem) 34.7rem;
+      calc(50% - 10rem) 0,
+      50% 17.3rem,
+      calc(50% - 10rem) 34.7rem;
 
     &__main {
       flex-direction: row;
@@ -102,14 +118,16 @@
     }
 
     &__image {
-      position: revert;
-      padding-top: 9.3rem;
+      position: absolute;
+      top: 14.3rem;
+      left: calc(50% - 30.75rem);
     }
 
     &__article {
       position: revert;
+      padding-right:0;
       max-width: 90ch;
-      padding: 5rem 0 0 0;
+      margin-left: 35%;
     }
   }
 }

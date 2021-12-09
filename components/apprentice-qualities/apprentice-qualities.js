@@ -4,21 +4,16 @@ import styles from './apprentice-qualities.module.scss';
 const ApprenticeQualities = () => (
   <section className={styles['apprentice-qualities']}>
     <div className={styles['apprentice-qualities__main']}>
-      <img
-        src="/apprentice-qualities.svg"
-        alt="The three qualities sparkbox looks for in apprentices: Passion, Character, and Initiative."
-        className={styles['apprentice-qualities__image']}
-      />
-      <div className={styles['apprentice-qualities__article']}>
-        <p className={`${styles.primary} ${styles['apprentice-qualities__article-heading']}`}>
+      <article className={styles['apprentice-qualities__article']}>
+        <h2 className={`${styles.primary} ${styles['apprentice-qualities__article-heading']}`}>
           What we look for
-        </p>
-        <h2 className={
+        </h2>
+        <h3 className={
           styles['apprentice-qualities__article-subheading']
         }
         >
           Qualities of Successful Apprentices
-        </h2>
+        </h3>
         <div className={styles['apprentice-qualities__article-text']}>
           <p>
             We build responsive, standards-compliant, content-focused,
@@ -41,7 +36,12 @@ const ApprenticeQualities = () => (
             provide anything and everything you can that will convince us you are that geek.
           </p>
         </div>
-      </div>
+        <img
+          src="/apprentice-qualities.svg"
+          alt="The three qualities sparkbox looks for in apprentices: Passion, Character, and Initiative."
+          className={styles['apprentice-qualities__image']}
+        />
+      </article>
     </div>
   </section>
 );
