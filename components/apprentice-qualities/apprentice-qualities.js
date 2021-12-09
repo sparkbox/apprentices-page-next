@@ -9,7 +9,7 @@ const ApprenticeQualities = () => (
         alt="The three qualities sparkbox looks for in apprentices: Passion, Character, and Initiative."
         className={styles['apprentice-qualities__image']}
       />
-      <article className={styles['apprentice-qualities__article']}>
+      <div className={styles['apprentice-qualities__article']}>
         <p className={`${styles.primary} ${styles['apprentice-qualities__article-heading']}`}>
           What we look for
         </p>
@@ -41,7 +41,7 @@ const ApprenticeQualities = () => (
             provide anything and everything you can that will convince us you are that geek.
           </p>
         </div>
-      </article>
+      </div>
     </div>
   </section>
 );
