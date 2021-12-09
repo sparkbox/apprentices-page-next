@@ -4,7 +4,7 @@ import styles from './apprentice-qualities.module.scss';
 const ApprenticeQualities = () => (
   <section className={styles['apprentice-qualities']}>
     <div className={styles['apprentice-qualities__main']}>
-      <article className={styles['apprentice-qualities__article']}>
+      <div className={styles['apprentice-qualities__article']}>
         <h2 className={`${styles.primary} ${styles['apprentice-qualities__article-heading']}`}>
           What we look for
         </h2>
@@ -41,7 +41,7 @@ const ApprenticeQualities = () => (
           alt="The three qualities sparkbox looks for in apprentices: Passion, Character, and Initiative."
           className={styles['apprentice-qualities__image']}
         />
-      </article>
+      </div>
     </div>
   </section>
 );
