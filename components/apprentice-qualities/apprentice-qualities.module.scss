@@ -8,11 +8,11 @@
 
 .apprentice-qualities {
   @include vertical-section-spacing();
-  @include horizontal-section-spacing();
   width: $component-width;
 
   &__main {
-    margin: auto;
+    @include horizontal-section-spacing();
+    box-sizing: border-box;
   }
 
   &__image {
@@ -20,8 +20,6 @@
   }
 
   &__article {
-    padding: 1rem;
-
     &-text {
       font-style: normal;
       font-weight: normal;
@@ -61,9 +59,9 @@
     background-repeat: repeat-x;
     background-size: 20rem;
     background-position:
-      $medium-screen-padding+12rem 0,
-      $medium-screen-padding+2rem  17.4rem,
-      $medium-screen-padding+12rem 34.7rem;
+      $medium-screen-padding+8.2rem 0,
+      $medium-screen-padding+ -1.8rem  17.4rem,
+      $medium-screen-padding+8.2rem 34.7rem;
 
     &__main {
       display: flex;
@@ -87,7 +85,7 @@
       left: 25rem;
       top: 8rem;
       padding-top: 3rem;
-      padding-right: 1rem;
+      padding-right: 3.75rem;
 
       &--heading {
         order: 2;
@@ -126,8 +124,9 @@
     &__article {
       position: revert;
       padding-right: 0;
+      width: 70ch;
       max-width: 90ch;
-      margin-left: 35%;
+      margin-left: 40%;
     }
   }
 }

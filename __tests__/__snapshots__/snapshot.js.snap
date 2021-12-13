@@ -203,24 +203,19 @@ exports[`renders homepage unchanged 1`] = `
       <div
         className="apprentice-qualities__main"
       >
-        <img
-          alt="The three qualities sparkbox looks for in apprentices: Passion, Character, and Initiative."
-          className="apprentice-qualities__image"
-          src="/apprentice-qualities.svg"
-        />
-        <article
+        <div
           className="apprentice-qualities__article"
         >
-          <p
+          <h2
             className="primary apprentice-qualities__article-heading"
           >
             What we look for
-          </p>
-          <h2
+          </h2>
+          <h3
             className="apprentice-qualities__article-subheading"
           >
             Qualities of Successful Apprentices
-          </h2>
+          </h3>
           <div
             className="apprentice-qualities__article-text"
           >
@@ -234,7 +229,12 @@ exports[`renders homepage unchanged 1`] = `
               We’re looking primarily for those interested in an apprenticeship in web development—frontend, backend, or anything code related. What we’re looking for most, however, are individuals who are excited to make their mark on the web industry. In your application, provide anything and everything you can that will convince us you are that geek.
             </p>
           </div>
-        </article>
+          <img
+            alt="The three qualities sparkbox looks for in apprentices: Passion, Character, and Initiative."
+            className="apprentice-qualities__image"
+            src="/apprentice-qualities.svg"
+          />
+        </div>
       </div>
     </section>
     <section
