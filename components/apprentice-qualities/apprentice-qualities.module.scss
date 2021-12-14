@@ -13,6 +13,9 @@
   &__main {
     @include horizontal-section-spacing();
     box-sizing: border-box;
+    justify-content: right;
+    max-width: $max-content-width + ($xlarge-screen-padding * 2);
+    margin: auto;
   }
 
   &__image {
