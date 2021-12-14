@@ -115,7 +115,7 @@
         },
         {
           "name": "Nathan Jacobs",
-          "status": "current"
+          "status": "previous"
         },
         {
           "name": "Catherine Meade",
@@ -188,18 +188,18 @@
         "name": "Angus Chang",
         "image": "/apprentices/Angus.png",
         "links": [
-          { "href": "personal", "text": "Personal" },
-          { "href": "https://www.linkedin.com/", "text": "Linkedin" },
-          { "href": "https://www.github.com/", "text": "Github" }
+          { "href": "https://changangus.github.io/", "text": "Portfolio" },
+          { "href": "https://www.linkedin.com/in/changangus/", "text": "LinkedIn" },
+          { "href": "https://github.com/changangus", "text": "GitHub" }
         ]
       },
       {
         "name": "Alice Russell",
         "image": "/apprentices/Alice.png",
         "links": [
-          { "href": "personal", "text": "Personal" },
-          { "href": "https://www.linkedin.com/", "text": "Linkedin" },
-          { "href": "https://www.github.com/", "text": "Github" }
+          { "href": "https://auaruss.github.io", "text": "Portfolio" },
+          { "href": "https://www.linkedin.com/in/alice-russell-292315225/", "text": "LinkedIn" },
+          { "href": "https://github.com/auaruss", "text": "GitHub" }
         ]
       }
     ]
