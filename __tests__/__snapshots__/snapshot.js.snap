@@ -25,7 +25,7 @@ exports[`renders homepage unchanged 1`] = `
           />
         </svg>
         <a
-          href="https://www.seesparkbox.com"
+          href="https://sparkbox.com"
         >
           <span
             className="hero__header-label"
@@ -709,7 +709,7 @@ exports[`renders homepage unchanged 1`] = `
         This site was proudly built by Sparkbox apprentices Version 14.0.
       </p>
       <a
-        href="https://www.seesparkbox.com"
+        href="https://sparkbox.com"
       >
         <span
           className="sr-only"
