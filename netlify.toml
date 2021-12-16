@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "/apply-dev.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/apply-fed.html"
+  to = "/"
+  status = 301
+  force = true
