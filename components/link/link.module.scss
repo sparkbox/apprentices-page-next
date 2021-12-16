@@ -3,4 +3,16 @@
 .link {
   color: $primary-text-color;
   margin-right: 3px;
+  background-size: calc(200% + 1px);
+  background-position-x: 0%;
+  background-image: linear-gradient(to right, transparent 50%, #444 50%);
+  background-clip: content-box;
+  transition: background-position-x 250ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-position-x: -100%;
+    transition: background-position-x 250ms ease-in-out;
+  }
 }
+
