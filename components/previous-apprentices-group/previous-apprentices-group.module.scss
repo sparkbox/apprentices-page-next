@@ -3,7 +3,7 @@
 @use '../../styles/fonts' as *;
 
 .previous-apprentices-group {
-  flex-basis: 40%;
+  flex-basis: $previous-apprentice-group-width-small;
 
   &__version {
     color: $c-highlight-pink;
@@ -26,6 +26,6 @@
 
 @media (min-width: 45rem) {
   .previous-apprentices-group {
-    flex-basis: 17%;
+    flex-basis: $previous-apprentice-group-width-large;
   }
 }

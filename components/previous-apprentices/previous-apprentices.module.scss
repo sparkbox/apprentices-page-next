@@ -45,6 +45,18 @@
     flex-flow: row wrap;
     max-width: $max-content-width;
     margin: auto;
+
+    @supports (display: grid) {
+      display: grid;
+      // The grid size should match the flex basis used in .previous-apprentices-group, which
+      // is based on a four-column layout.
+      grid-template-columns: repeat(auto-fill, $previous-apprentice-group-width-small);
+      justify-content: space-between;
+
+      @media (min-width: 45rem) {
+        grid-template-columns: repeat(auto-fill, $previous-apprentice-group-width-large);
+      }
+    }
   }
 }
 
@@ -92,7 +104,6 @@
 
     &__groups {
       margin: 0 auto;
-      justify-content: space-between;
     }
 
     &__legend {
