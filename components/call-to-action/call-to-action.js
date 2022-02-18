@@ -14,8 +14,8 @@ const CallToAction = () => (
       </div>
       <div aria-hidden className={styles['call-to-action__art-container']}>
         <div className={styles['call-to-action__grid']}>
-          <img src="/apprentices/Michael.png" alt="" />
-          <img src="/apprentices/Neil.png" alt="" />
+          <img src="/apprentices/Angus.png" alt="" />
+          <img src="/apprentices/Alice.png" alt="" />
           <img src="/apprentices/Sheridan.png" alt="" />
           <img src="/apprentices/Hunter.png" alt="" />
           <img src="/apprentices/Merani.png" alt="" />

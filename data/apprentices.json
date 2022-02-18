@@ -1,6 +1,18 @@
 {
   "previousApprenticeGroups": [
     {
+      "version": "14.0",
+      "apprentices": [
+        {
+          "name": "Angus Chang",
+          "status": "current"
+        },
+        {
+          "name": "Alice Russell"
+        }
+      ]
+    },
+    {
       "version": "13.0",
       "apprentices": [
         {
@@ -182,24 +194,31 @@
     }
   ],
   "currentApprenticeGroup": {
-    "version": "14.0",
+    "version": "15.0",
     "currentApprentices": [
       {
-        "name": "Angus Chang",
-        "image": "/apprentices/Angus.png",
+        "name": "Meg Howe",
+        "image": "/apprentices/Meg.png",
         "links": [
-          { "href": "https://changangus.github.io/", "text": "Portfolio" },
-          { "href": "https://www.linkedin.com/in/changangus/", "text": "LinkedIn" },
-          { "href": "https://github.com/changangus", "text": "GitHub" }
+          { "href": "https://mhowe.dev", "text": "Portfolio" },
+          { "href": "https://www.linkedin.com/in/howema", "text": "LinkedIn" },
+          { "href": "https://github.com/howema", "text": "GitHub" }
         ]
       },
       {
-        "name": "Alice Russell",
-        "image": "/apprentices/Alice.png",
+        "name": "Osmond Arnesto",
+        "image": "/apprentices/Osmond.png",
         "links": [
-          { "href": "https://auaruss.github.io", "text": "Portfolio" },
-          { "href": "https://www.linkedin.com/in/alice-russell-292315225/", "text": "LinkedIn" },
-          { "href": "https://github.com/auaruss", "text": "GitHub" }
+          { "href": "https://osmondarnesto.com", "text": "Portfolio" },
+          { "href": "https://github.com/arnest00", "text": "GitHub" }
+        ]
+      },
+      {
+        "name": "Theo Gainey",
+        "image": "/apprentices/Theo.png",
+        "links": [
+          { "href": "https://www.theogainey.com", "text": "Portfolio" },
+          { "href": "https://github.com/theogainey", "text": "GitHub" }
         ]
       }
     ]

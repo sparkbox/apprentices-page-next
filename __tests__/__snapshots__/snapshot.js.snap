@@ -609,11 +609,11 @@ exports[`renders homepage unchanged 1`] = `
           >
             <img
               alt=""
-              src="/apprentices/Michael.png"
+              src="/apprentices/Angus.png"
             />
             <img
               alt=""
-              src="/apprentices/Neil.png"
+              src="/apprentices/Alice.png"
             />
             <img
               alt=""
@@ -702,7 +702,7 @@ exports[`renders homepage unchanged 1`] = `
         <span>
           © Sparkbox
            
-          2021
+          2022
           .
            
         </span>
