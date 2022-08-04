@@ -1,6 +1,22 @@
 {
   "previousApprenticeGroups": [
     {
+      "version": "15.0",
+      "apprentices": [
+        {
+          "name": "Osmond Arnesto",
+          "status": "current"
+        },
+        {
+          "name": "Theo Gainey",
+          "status": "current"
+        },
+        {
+          "name": "Meg Howe"
+        }
+      ]
+    },
+    {
       "version": "14.0",
       "apprentices": [
         {
@@ -194,31 +210,41 @@
     }
   ],
   "currentApprenticeGroup": {
-    "version": "15.0",
+    "version": "16.0",
     "currentApprentices": [
       {
-        "name": "Meg Howe",
-        "image": "/apprentices/Meg.png",
+        "name": "Marissa Huysentruyt",
+        "image": "/apprentices/Marissa.png",
         "links": [
-          { "href": "https://mhowe.dev", "text": "Portfolio" },
-          { "href": "https://www.linkedin.com/in/howema", "text": "LinkedIn" },
-          { "href": "https://github.com/howema", "text": "GitHub" }
+          { "href": "https://www.marissahuysentruyt.com", "text": "Portfolio" },
+          { "href": "https://www.linkedin.com/in/mhuysentruyt", "text": "LinkedIn" },
+          { "href": "https://github.com/marissahuysentruyt", "text": "GitHub" }
         ]
       },
       {
-        "name": "Osmond Arnesto",
-        "image": "/apprentices/Osmond.png",
+        "name": "Teresita Isidro",
+        "image": "/apprentices/Teresita.png",
         "links": [
-          { "href": "https://osmondarnesto.com", "text": "Portfolio" },
-          { "href": "https://github.com/arnest00", "text": "GitHub" }
+          { "href": "https://www.terriisidro.com", "text": "Portfolio" },
+          { "href": "https://www.linkedin.com/in/tisidro", "text": "LinkedIn" },
+          { "href": "https://github.com/tisidro", "text": "GitHub" }
         ]
       },
       {
-        "name": "Theo Gainey",
-        "image": "/apprentices/Theo.png",
+        "name": "Jared Kohrt",
+        "image": "/placeholder.png",
         "links": [
-          { "href": "https://www.theogainey.com", "text": "Portfolio" },
-          { "href": "https://github.com/theogainey", "text": "GitHub" }
+          { "href": "http://jaredkohrt.com/", "text": "Portfolio" },
+          { "href": "https://www.linkedin.com/in/jared-kohrt-85029a19a/", "text": "LinkedIn" },
+          { "href": "https://github.com/jkohrt7", "text": "GitHub" }
+        ]
+      },
+      {
+        "name": "Bennett Smrdel",
+        "image": "/apprentices/Bennett.png",
+        "links": [
+          { "href": "https://www.linkedin.com/in/bennett-smrdel", "text": "LinkedIn" },
+          { "href": "https://github.com/bsmrdel101", "text": "GitHub" }
         ]
       }
     ]
