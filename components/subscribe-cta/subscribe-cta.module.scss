@@ -1,0 +1,195 @@
+@use '../../styles/colors' as *;
+@use '../../styles/spacing' as *;
+@use '../../styles/mixins' as *;
+
+.subscribe-cta {
+  @include horizontal-section-spacing();
+  @include vertical-section-spacing();
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+
+
+  &__container {
+    max-width: $max-content-width;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text-container {
+    order: 1;
+
+    h2 {
+      font-size: 3.25rem;
+      font-family: 'Sole Serif', serif;
+      font-weight: 100;
+    }
+
+    p {
+      margin-bottom: 3rem;
+    }
+
+    p:first-of-type {
+      margin-bottom: 1.5rem;
+    }
+
+    a {
+      width: 15rem;
+      padding: 0.5rem;
+      font-size: 1.15rem;
+      border: 3px white solid;
+      color: white;
+      background-color: rgba(0, 0, 0, 0);
+      text-decoration: none;
+
+      &:hover {
+        color: black;
+        background-color: white;
+      }
+    }
+  }
+
+  &__art-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    order: 0;
+  }
+
+  &__grid {
+    display: none;
+  }
+
+  @supports (display:grid) {
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(63, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+
+      img {
+        max-width: 100%;
+
+        // Images below are placed in the grid in order from top to bottom and left to right
+        &:nth-child(1) {
+          grid-area: 1 / 38 / span 8 / span 22;
+          background-color: $c-highlight-green;
+        }
+
+        &:nth-child(2) {
+          grid-area: 5 / 16 / span 8 / span 22;
+          background-color: $c-highlight-blue;
+        }
+
+        &:nth-child(3) {
+          grid-area: 9 / 38 / span 2 / span 11;
+          background-color: $c-highlight-pink;
+        }
+      }
+
+      // Triangle
+      &--shape1 {
+        grid-area: 10 / 35 / span 5 / span 15;
+        stroke-width: 0.5;
+        margin-top: 1rem;
+
+        path {
+          stroke: $c-highlight-green;
+        }
+      }
+
+      // Circle: top
+      &--shape2 {
+        grid-area: 1 / 33 / span 4 / span 9;
+        margin-top: -2rem;
+
+        circle {
+          stroke: $c-highlight-blue;
+        }
+      }
+
+      // Circle: bottom
+      &--shape3 {
+        grid-area: 5 / 4 / span 4 / span 17;
+        margin-top: 1.5rem;
+
+        circle {
+          stroke: $c-highlight-pink;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 45rem) {
+    &__text-container {
+      width: 100%;
+      margin-top: -10rem;
+
+      p {
+        width: 70%;
+        font-size: 1.5rem;
+      }
+    }
+
+    &__art-container {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__grid {
+      width: 50%;
+    }
+
+    &__footer {
+      font-size: 1rem;
+      margin-top: 10rem;
+    }
+  }
+
+  @media (min-width: 70.25rem) {
+    &__container {
+      flex-direction: row;
+    }
+
+    &__text-container {
+      margin: 5rem 0;
+      order: 0;
+
+      p {
+        margin-bottom: 5rem;
+        width: 100%;
+      }
+    }
+
+    &__grid {
+      width: 90%;
+
+      img {
+        &:nth-child(3) {
+          grid-area: 9 / 5 / span 2 / span 11;
+        }
+      }
+
+      &--shape1 {
+        grid-area: 4 / 35 / span 5 / span 20;
+        margin-top: 1.25rem;
+
+        path {
+          stroke: $c-highlight-pink;
+        }
+      }
+
+      &--shape3 {
+        grid-area: 9 / 12 / span 4 / span 15;
+        margin-top: 1.25rem;
+
+        circle {
+          stroke: $c-highlight-green;
+        }
+      }
+    }
+  }
+}
