@@ -19,9 +19,7 @@ const ApprenticeQualities = () => (
             We build responsive, standards-compliant, content-focused,
             well-crafted, accessible, valuable, beautiful websites and apps,
             and we’re looking for some beginner web creators that want to do the same.
-
           </p>
-
           <p>
             Passion, character, and initiative are a requirement,
             and we’re looking for those who have at least a beginning
@@ -29,9 +27,7 @@ const ApprenticeQualities = () => (
             will help build your technical and professional skill set, as we
             take a holistic approach to develop you into the sort of individual
             we’d want to hire. And we may do just that!
-
           </p>
-
           <p>
             We’re looking for folks interested in one of our three apprenticeship tracks:
           </p>

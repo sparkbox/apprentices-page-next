@@ -7,10 +7,12 @@ const CallToAction = () => (
       <div className={styles['call-to-action__text-container']}>
         <h2>Ready to Apply?</h2>
         <p>
-          Take a dive into the world of clean, responsive,
-          full-stack development as you learn what it takes to build a better web.
+          Take a dive into our world as you learn what it takes to build a better web.
+          Sign up for our monthly newsletter to be notified when applications open,
+          or you can check out our careers page for all currently available positions.
         </p>
-        <a href="https://sparkbox.breezy.hr/p/a996600dfdcc-sparkbox-remote-full-stack-apprentice">Learn More & Apply</a>
+        <a href="https://sparkbox.us1.list-manage.com/subscribe/post?u=c2fcafb7ccc2db34e99075bb1&id=2835f91fa5&f_id=00847ae1f0">Newsletter Sign-Up</a>
+        <a href="https://sparkbox.com/careers">Sparkbox Careers</a>
       </div>
       <div aria-hidden className={styles['call-to-action__art-container']}>
         <div className={styles['call-to-action__grid']}>

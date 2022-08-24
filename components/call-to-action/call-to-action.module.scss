@@ -41,6 +41,10 @@
       background-color: rgba(0, 0, 0, 0);
       text-decoration: none;
 
+      & + a {
+        margin-left: 1.4rem;
+      }
+
       &:hover {
         color: black;
         background-color: white;
