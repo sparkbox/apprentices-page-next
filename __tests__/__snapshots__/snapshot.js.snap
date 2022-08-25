@@ -10,10 +10,12 @@ exports[`renders homepage unchanged 1`] = `
     <div
       className="hero__container"
     >
-      <div>
+      <div
+        className="logo"
+      >
         <svg
           aria-hidden={true}
-          className="hero__sparkbox-logo--half"
+          className="logo--half"
           fill="none"
           height="45"
           width="41"
@@ -28,13 +30,13 @@ exports[`renders homepage unchanged 1`] = `
           href="https://sparkbox.com"
         >
           <span
-            className="hero__header-label"
+            className="logo__label"
           >
             Sparkbox
           </span>
           <svg
             aria-hidden={true}
-            className="hero__sparkbox-logo--full"
+            className="logo--full"
             fill="none"
             height="52"
             width="193"
