@@ -608,16 +608,20 @@ exports[`renders homepage unchanged 1`] = `
           <p>
             Take a dive into our world as you learn what it takes to build a better web. Sign up for our monthly newsletter to be notified when applications open, or you can check out our careers page for all currently available positions.
           </p>
-          <a
-            href="https://sparkbox.us1.list-manage.com/subscribe/post?u=c2fcafb7ccc2db34e99075bb1&id=2835f91fa5&f_id=00847ae1f0"
+          <div
+            className="call-to-action__link-container"
           >
-            Newsletter Sign-Up
-          </a>
-          <a
-            href="https://sparkbox.com/careers"
-          >
-            Sparkbox Careers
-          </a>
+            <a
+              href="https://sparkbox.us1.list-manage.com/subscribe/post?u=c2fcafb7ccc2db34e99075bb1&id=2835f91fa5&f_id=00847ae1f0"
+            >
+              Newsletter Sign-Up
+            </a>
+            <a
+              href="https://sparkbox.com/careers"
+            >
+              Sparkbox Careers
+            </a>
+          </div>
         </div>
         <div
           aria-hidden={true}

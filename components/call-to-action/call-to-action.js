@@ -11,8 +11,10 @@ const CallToAction = () => (
           Sign up for our monthly newsletter to be notified when applications open,
           or you can check out our careers page for all currently available positions.
         </p>
-        <a href="https://sparkbox.us1.list-manage.com/subscribe/post?u=c2fcafb7ccc2db34e99075bb1&id=2835f91fa5&f_id=00847ae1f0">Newsletter Sign-Up</a>
-        <a href="https://sparkbox.com/careers">Sparkbox Careers</a>
+        <div className={styles['call-to-action__link-container']}>
+          <a href="https://sparkbox.us1.list-manage.com/subscribe/post?u=c2fcafb7ccc2db34e99075bb1&id=2835f91fa5&f_id=00847ae1f0">Newsletter Sign-Up</a>
+          <a href="https://sparkbox.com/careers">Sparkbox Careers</a>
+        </div>
       </div>
       <div aria-hidden className={styles['call-to-action__art-container']}>
         <div className={styles['call-to-action__grid']}>
