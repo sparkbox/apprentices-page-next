@@ -21,8 +21,7 @@ const LearnMore = () => (
           </p>
           <p>
             In 2023, we plan to offer just one Full-Stack Developer Apprenticeship,
-            which will run July through December
-            (all applications are due on or before April 1 at midnight).
+            which will run July through December.
             Late applications will not be considered.
           </p>
         </div>
@@ -40,8 +39,7 @@ const LearnMore = () => (
           </p>
           <p>
             In 2023, we plan to offer one Frontend Design Apprenticeship,
-            which will run January through June
-            (all applications are due on or before October 1 at midnight).
+            which will run January through June.
             Late applications will not be considered.
           </p>
         </div>
@@ -59,8 +57,7 @@ const LearnMore = () => (
           </p>
           <p>
             In 2023, we plan to offer one UI/UX Design Apprenticeship
-            which will run January through June
-            (all applications are due on or before October 1 at midnight).
+            which will run January through June.
             Late applications will not be considered.
           </p>
         </div>

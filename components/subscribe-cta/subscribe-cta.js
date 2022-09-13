@@ -5,21 +5,17 @@ const SubscribeCTA = () => (
   <footer className={styles['subscribe-cta']}>
     <div className={styles['subscribe-cta__container']}>
       <div className={styles['subscribe-cta__text-container']}>
-        <h2>Deserunt, Nulla Non?</h2>
+        <h2>Keep in Touch</h2>
         <p>
-          Ab repellendus, repudiandae amet itaque.
-          Quod doloribus dolore sapiente id accusamus in deserunt,
-          incidunt facere porro excepturi iste architecto quasi.
-          Adipisci expedita quia modi aspernatur.
-          Hic pariatur eos voluptatem tenetur natus.
-          Necessitatibus inventore vero reiciendis culpa excepturi saepe repudiandae.
+          Sign up for our monthly newsletter
+          to be notified when applications open,
+          or you can check out our careers page
+          for all currently available positions.
         </p>
-        <p>
-          Alias placeat fuga voluptates, impedit optio labore eius vitae explicabo.
-          Tempora exercitationem quis accusantium illo! Doloribus, deleniti!
-          Repellendus, voluptatibus ratione laudantium minima dignissimos commodi similique qui.
-        </p>
-        <a href="https://apprentices.sparkbox.com">Consectetur Adipisicing Elit</a>
+        <div className={styles['subscribe-cta__link-container']}>
+          <a href="https://sparkbox.us1.list-manage.com/subscribe/post?u=c2fcafb7ccc2db34e99075bb1&id=2835f91fa5&f_id=00847ae1f0">Newsletter Sign-up</a>
+          <a href="https://sparkbox.com/careers">Sparkbox Careers</a>
+        </div>
       </div>
       <div aria-hidden className={styles['subscribe-cta__art-container']}>
         <div className={styles['subscribe-cta__grid']}>

@@ -31,19 +31,41 @@
     p {
       margin-bottom: 3rem;
     }
+  }
 
-    p:first-of-type {
-      margin-bottom: 1.5rem;
+  &__link-container {
+    $bp-links-move-inline: 37.5rem;
+
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $bp-links-move-inline) {
+      flex-direction: row;
     }
 
     a {
-      width: 15rem;
+      width: 100%;
       padding: 0.5rem;
       font-size: 1.15rem;
       border: 3px white solid;
+      box-sizing: border-box;
       color: white;
       background-color: rgba(0, 0, 0, 0);
       text-decoration: none;
+
+      @media (min-width: $bp-links-move-inline) {
+        width: fit-content;
+        max-width: 15rem;
+      }
+
+      & + a {
+        margin-top: 1.5rem;
+
+        @media (min-width: $bp-links-move-inline) {
+          margin-top: 0;
+          margin-left: 1.5rem;
+        }
+      }
 
       &:hover {
         color: black;

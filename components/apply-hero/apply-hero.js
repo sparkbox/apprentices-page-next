@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from '../logo/logo';
+import Link from '../link/link';
 import styles from './apply-hero.module.scss';
 
 const ApplyHero = () => (
@@ -8,14 +9,14 @@ const ApplyHero = () => (
       <Logo />
       <div className={styles['apply-hero__header-content']}>
         <div className={styles['apply-hero__text']}>
-          <h1>Ullam Pariatur Rerum Tenetur</h1>
+          <h1>Become an Apprentice</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Officia nam impedit rem?
-            Dolorum distinctio provident officiis vero,
-            sapiente debitis dicta vitae aut perferendis ad,
-            eos veritatis iusto harum dolores eligendi fuga,
-            omnis culpa quod ut qui porro a sed repudiandae.
+            We&apos;re honored that you&apos;re here!
+            We trust that you&apos;ve read all about our apprenticeships, but if not,
+            {' '}
+            <Link href="/" ariaLabel="">
+              you&apos;ll want to take a few minutes to do that.
+            </Link>
           </p>
         </div>
         <div aria-hidden className={styles['apply-hero__art-container']}>
