@@ -26,6 +26,7 @@ const Home = ({ apprenticeData: { currentApprenticeGroup, previousApprenticeGrou
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <Hero />
+
     <main>
       <ApprenticeQualities />
       <CurrentApprentices currentApprenticeClass={currentApprenticeGroup} />
