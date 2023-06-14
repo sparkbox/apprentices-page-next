@@ -4,6 +4,13 @@ exports[`renders homepage unchanged 1`] = `
 <div
   className="container"
 >
+  <noscript
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "<iframe src=\\"https://www.googletagmanager.com/ns.html?id=GTM-KQ53HCR\\" height=\\"0\\" width=\\"0\\" style=\\"display:none;visibility:hidden\\"></iframe>",
+      }
+    }
+  />
   <header
     className="hero"
   >
@@ -725,7 +732,7 @@ exports[`renders homepage unchanged 1`] = `
         <span>
           © Sparkbox
            
-          2022
+          2023
           .
            
         </span>
