@@ -5,7 +5,9 @@ import styles from './index.module.scss';
 import apprenticeData from '../data/apprentices';
 import Hero from '../components/hero/hero';
 import ApprenticeQualities from '../components/apprentice-qualities/apprentice-qualities';
-import CurrentApprentices, { currentApprenticeClassPropTypes } from '../components/current-apprentices/current-apprentices';
+// Turn this back on when we restart the apprenticeship
+// import CurrentApprentices, { currentApprenticeClassPropTypes }
+// from '../components/current-apprentices/current-apprentices';
 import PreviousApprentices, { previousApprenticeGroupsPropTypes } from '../components/previous-apprentices/previous-apprentices';
 import CallToAction from '../components/call-to-action/call-to-action';
 import Footer from '../components/footer/footer';
@@ -19,7 +21,8 @@ export const getStaticProps = async () => ({
   },
 });
 
-const Home = ({ apprenticeData: { currentApprenticeGroup, previousApprenticeGroups } }) => (
+// const Home = ({ apprenticeData: { currentApprenticeGroup, previousApprenticeGroups } }) => (
+const Home = ({ apprenticeData: { previousApprenticeGroups } }) => (
   <div className={styles.container}>
     <Head>
       <title>Sparkbox Apprentices</title>
@@ -45,7 +48,8 @@ const Home = ({ apprenticeData: { currentApprenticeGroup, previousApprenticeGrou
     <Hero />
     <main>
       <ApprenticeQualities />
-      <CurrentApprentices currentApprenticeClass={currentApprenticeGroup} />
+      {/* Turn this back on when we restart the apprenticeship */}
+      {/* <CurrentApprentices currentApprenticeClass={currentApprenticeGroup} /> */}
       <PreviousApprentices previousApprenticeGroups={previousApprenticeGroups} />
       <CallToAction />
     </main>
@@ -56,7 +60,7 @@ const Home = ({ apprenticeData: { currentApprenticeGroup, previousApprenticeGrou
 
 Home.propTypes = {
   apprenticeData: PropTypes.shape({
-    currentApprenticeGroup: PropTypes.shape({ currentApprenticeClassPropTypes }).isRequired,
+    // currentApprenticeGroup: PropTypes.shape({ currentApprenticeClassPropTypes }).isRequired,
     previousApprenticeGroups: PropTypes.arrayOf(previousApprenticeGroupsPropTypes).isRequired,
   }),
 };
