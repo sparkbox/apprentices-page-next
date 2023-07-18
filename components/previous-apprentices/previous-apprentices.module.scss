@@ -78,11 +78,11 @@
 
 @media (min-width: 50rem) {
   .previous-apprentices {
-
-    background: url('../../public/sparkbox-logo.svg') no-repeat;
-    background-size: 40rem;
-    background-position-x: calc(50% + 38rem);
-    background-position-y: 16rem;
+    // Turn this back on when we restart the apprenticeship and "current apprentices" is active
+    // background: url('../../public/sparkbox-logo.svg') no-repeat;
+    // background-size: 40rem;
+    // background-position-x: calc(50% + 38rem);
+    // background-position-y: 16rem;
 
     &__groups {
       margin: auto;

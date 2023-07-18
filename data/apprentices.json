@@ -1,6 +1,26 @@
 {
   "previousApprenticeGroups": [
     {
+      "version": "16.0",
+      "apprentices": [
+        {
+          "name": "Marissa Huysentruyt",
+          "status": "current"
+        },
+        {
+          "name": "Teresita Isidro"
+        },
+        {
+          "name": "Jared Kohrt",
+          "status": "previous"
+        },
+        {
+          "name": "Bennett Smrdel",
+          "status": "previous"
+        }
+      ]
+    },
+    {
       "version": "15.0",
       "apprentices": [
         {
@@ -21,7 +41,7 @@
       "apprentices": [
         {
           "name": "Angus Chang",
-          "status": "current"
+          "status": "previous"
         },
         {
           "name": "Alice Russell"
@@ -50,11 +70,11 @@
       "apprentices": [
         {
           "name": "Hunter Keca",
-          "status": "current"
+          "status": "previous"
         },
         {
           "name": "Luis Hernandez",
-          "status": "current"
+          "status": "previous"
         },
         {
           "name": "Susmita Bhowmik"
@@ -99,7 +119,7 @@
       "apprentices": [
         {
           "name": "Yosevu Kilonzo",
-          "status": "current"
+          "status": "previous"
         },
         {
           "name": "Corinne Ling",
@@ -107,7 +127,7 @@
         },
         {
           "name": "Travis Sanon",
-          "status": "current"
+          "status": "previous"
         }
       ]
     },
