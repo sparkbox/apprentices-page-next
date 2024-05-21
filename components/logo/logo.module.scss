@@ -1,0 +1,30 @@
+@use '../../styles/colors' as *;
+@use '../../styles/spacing' as *;
+@use '../../styles/mixins' as *;
+
+.logo {
+  &__label {
+    @include visually-hidden();
+  }
+
+  &--full {
+    display: none;
+  }
+
+  @media (min-width: 43rem) {
+    &--half {
+      display: none;
+    }
+
+    &--full {
+      display: block;
+      margin-bottom: -10rem;
+    }
+  }
+
+  @media (min-width: 70.25rem) {
+    &--full {
+      margin-bottom: 0;
+    }
+  }
+}
