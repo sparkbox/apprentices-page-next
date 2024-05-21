@@ -3,6 +3,9 @@ import renderer from 'react-test-renderer';
 import Index from '../pages/index';
 
 it('renders homepage unchanged', () => {
+  const mockFooterDate = new Date(2023, 0, 1);
+  jest.spyOn(global, 'Date').mockImplementation(() => mockFooterDate);
+
   const apprenticeData = {
     currentApprenticeGroup: {
       version: '0.0',
