@@ -1,5 +1,17 @@
 [[redirects]]
-  from = "https://apprentices.seesparkbox.com"
+  from = "https://dnstest.seesparkbox.com/specific"
+  to = "https://sparkbox.com"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://dnstest.seesparkbox.com/*"
+  to = "https://apprentices.sparkbox.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://dnstest.seesparkbox.com"
   to = "https://apprentices.sparkbox.com"
   status = 301
   force = true
