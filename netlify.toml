@@ -1,10 +1,4 @@
 [[redirects]]
-  from = "https://apprentices.seesparkbox.com/*"
-  to = "https://apprentices.sparkbox.com/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "https://apprentices.seesparkbox.com"
   to = "https://apprentices.sparkbox.com"
   status = 301
