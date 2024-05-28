@@ -5,6 +5,12 @@
   force = true
 
 [[redirects]]
+  from = "https://apprentices.seesparkbox.com"
+  to = "https://apprentices.sparkbox.com"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/apply-dev.html"
   to = "/"
   status = 301
