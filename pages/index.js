@@ -46,6 +46,7 @@ const Home = ({ apprenticeData: { previousApprenticeGroups } }) => (
       }}
     />
     <Hero />
+
     <main>
       <ApprenticeQualities />
       {/* Turn this back on when we restart the apprenticeship */}
