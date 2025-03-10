@@ -2,7 +2,7 @@
 @use '../../styles/spacing' as *;
 @use '../../styles/mixins' as *;
 
-.hero {
+.apply-hero {
   width: $component-width;
   display: flex;
   justify-content: center;
@@ -24,7 +24,7 @@
   &__text {
     display: flex;
     flex-direction: column;
-    order: 1;
+    margin-top: 1rem;
 
     h1 {
       font-size: 2.65rem;
@@ -40,6 +40,7 @@
 
   &__art-container {
     display: none;
+    order: 1;
   }
 
   &__grid {
@@ -55,69 +56,46 @@
     &__grid {  // This grid is for the hero images and svgs
       display: grid;
       grid-template-columns: repeat(63, 1fr);
-      grid-template-rows: repeat(11, 1fr);
+      grid-template-rows: repeat(18, 1fr);
 
       img {
         max-width: 100%;
 
         // Images below are placed in the grid in order from top to bottom and left to right
         &:nth-child(1) {
-          grid-area: 2 / 18 / 7 / 41;
+          grid-area: 3 / 3 / span 5 / span 23;
           background-color: $c-highlight-blue;
         }
 
         &:nth-child(2) {
-          grid-area: 7 / 7 / 11 / 18;
+          grid-area: 5 / 49 / span 4 / span 13;
+          margin-top: 6px;
           background-color: $c-highlight-green;
         }
 
         &:nth-child(3) {
-          grid-area: 7 / 41 / 12 / 64;
-          background-color: $c-highlight-green;
-        }
-
-        &:nth-child(4) {
-          margin-top: -3px;
-          grid-area: 12 / 18 / 17 / 41;
+          grid-area: 8 / 26 / span 5 / span 23;
           background-color: $c-highlight-pink;
         }
 
-        &:nth-child(5) {
-          grid-area: 17 / 41 / 20 / 51;
-          background-color: $c-highlight-blue;
-        }
-        // In mobile and tablet view only 3 images are shown
-        &:nth-child(n + 4) {
-          display: none;
+        &:nth-child(4) {
+          grid-area: 13 / 3 / span 5 / span 23;
+          background-color: $c-highlight-green;
         }
       }
 
-      // Triangle: Top Right
+      // Triangle: Top Left
       &--shape1 {
-        grid-area: 1 / 37 / 3 / 46;
+        grid-area: 2 / 23 / span 2 / span 9;
 
         path {
           stroke: $c-highlight-pink;
         }
       }
 
-      // Circle: Top Left
+      // Circle: Top Right
       &--shape2 {
-        grid-area: 3 / 11 / 7 / 20;
-
-        circle {
-          stroke: $c-highlight-green;
-        }
-      }
-
-      // Triangle: Middle Left
-      &--shape3 {
-        grid-area: 6 / 2 / 9 / 9;
-      }
-
-      // Circle: Middle Right
-      &--shape4 {
-        grid-area: 7 / 30 / 12 / 44;
+        grid-area: 3 / 39 / span 5 / span 14;
 
         circle {
           stroke: $c-highlight-blue;
@@ -125,10 +103,9 @@
         }
       }
 
-      // Triangle: Bottom Left
-      &--shape5 {
-        display: none;
-        grid-area: 14 / 6 / 19 / 26;
+      // Triangle: Middle Left
+      &--shape3 {
+        grid-area: 7 / 8 / span 5 / span 20;
 
         path {
           stroke: $c-highlight-green;
@@ -136,25 +113,39 @@
         }
       }
 
-      // Circle: Bottom Right
-      &--shape6 {
-        display: none;
-        grid-area: 13 / 39 / 15 / 44;
+      // Circle: Middle Right
+      &--shape4 {
+        grid-area: 11 / 48 / span 2 / span 5;
+        margin-top: -1rem;
 
         circle {
-          stroke: $c-highlight-blue;
+          stroke: $c-highlight-green;
           stroke-width: 1.5;
         }
       }
 
-      // Triangle: Bottom Right
-      &--shape7 {
-        display: none;
-        grid-area: 16 / 49 / 19 / 56;
+      // Triangle: Bottom
+      &--shape5 {
+        grid-area: 13 / 25 / span 3 / span 7;
+        margin-top: -1rem;
+
+        path {
+          stroke: $c-highlight-blue;
+          stroke-width: 0.75;
+        }
+      }
+
+      // Circle: Bottom
+      &--shape6 {
+        grid-area: 17 / 13 / span 4 / span 9;
+
+        circle {
+          stroke: $c-highlight-pink;
+          stroke-width: 0.75;
+        }
       }
     }
   }
-
 
   @media (min-width: 43rem) {
     &__text {
@@ -175,6 +166,7 @@
     }
 
     &__art-container {
+      order: unset;
       width: 100%;
       display: flex;
       justify-content: flex-end;
@@ -215,24 +207,6 @@
 
     &__grid {
       width: 100%;
-
-      img {
-        &:nth-child(n + 4) {
-          display: block;
-        }
-      }
-
-      &--shape5 {
-        display: block;
-      }
-
-      &--shape6 {
-        display: block;
-      }
-
-      &--shape7 {
-        display: block;
-      }
     }
   }
 }
